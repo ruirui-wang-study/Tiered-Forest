@@ -152,26 +152,33 @@ def tier1_filter(path):
 
 def tier2_score(path, query, tau_low, tau_high):
     """
-    Real Semantic Scoring using TF-IDF (Scikit-Learn)
-    This calculates the cosine similarity between the Query and the Path.
-    It prefers paths that share significant content words with the query.
+    Real Semantic Scoring using Jaccard Similarity (Word Overlap)
+    For short text KG paths, simple word overlap is a very strong baseline.
+    It measures how many words in the query also appear in the path.
     """
-    from sklearn.feature_extraction.text import TfidfVectorizer
-    from sklearn.metrics.pairwise import cosine_similarity
-    
     start = time.time()
     
-    # Create a local corpus for this pair to capture overlap
-    # In a real system, you'd fit on the whole KB, but this works for pairwise comparison
-    corpus = [query, path.nodes_str]
-    vectorizer = TfidfVectorizer().fit_transform(corpus)
-    vectors = vectorizer.toarray()
+    # 1. Clean and Tokenize
+    # Remove brackets [] and other punctuation to ensure '[Entity]' matches 'Entity'
+    def clean_tokenize(text):
+        text = re.sub(r'[^a-zA-Z0-9\s]', ' ', text)
+        return set(text.lower().split())
+
+    stop_words = {'what', 'did', 'does', 'in', 'the', 'a', 'an', 'was', 'is', 'movies', 'movie', 'film', 'films', 'act', 'actor', 'appear'}
     
-    # Cosine similarity between Query (0) and Path (1)
-    score = cosine_similarity([vectors[0]], [vectors[1]])[0][0]
+    q_tokens = clean_tokenize(query) - stop_words
+    p_tokens = clean_tokenize(path.nodes_str) - stop_words
+    
+    # 2. Jaccard Index
+    if not q_tokens or not p_tokens:
+        return 0.0
+        
+    intersection = len(q_tokens.intersection(p_tokens))
+    union = len(q_tokens.union(p_tokens))
+    
+    score = intersection / union if union > 0 else 0.0
     
     path.score = score
-    # Simulate a small compute cost for vectorization
     path.token_cost += 0 
     path.time_cost += (time.time() - start)
     
@@ -186,7 +193,7 @@ def tier3_deepseek(path, query):
     path.decision = "Accepted" if accepted else "Rejected"
     return path.decision
 
-def tiered_pipeline(paths, query, tau_low=0.05, tau_high=0.3):
+def tiered_pipeline(paths, query, tau_low=0.01, tau_high=0.15):
     accepted = []
     
     for path in paths:
