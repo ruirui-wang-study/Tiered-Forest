@@ -1,0 +1,1 @@
+{"DeepSeek-only": {"total_tokens": 3186.0, "total_time": 46.286269664764404, "accuracy": 1.0, "f1": 1.0}, "Tiered-Forest": {"total_tokens": 2554.0, "total_time": 21.077100038528442, "accuracy": 1.0, "f1": 1.0}}
