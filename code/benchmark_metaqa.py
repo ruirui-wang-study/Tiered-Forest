@@ -9,12 +9,19 @@ import time
 import copy
 import json
 import re
+import configparser
 from openai import OpenAI
 
-# ------------------------------
-# DeepSeek API Setup
-# ------------------------------
-client = OpenAI(api_key="sk-121ee6eebcc5460e91e367135db5b1c9", base_url="https://api.deepseek.com")
+# Load Config
+config = configparser.ConfigParser()
+config.read(os.path.join(os.path.dirname(__file__), '..', 'config.ini'))
+if 'api' not in config:
+     config.read('config.ini')
+
+api_key = config.get('api', 'deepseek_key', fallback='YOUR_KEY')
+base_url = config.get('api', 'deepseek_url', fallback='https://api.deepseek.com')
+
+client = OpenAI(api_key=api_key, base_url=base_url)
 
 def deepseek_evaluate(query, path_str):
     """
