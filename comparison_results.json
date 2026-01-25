@@ -1,27 +1,32 @@
 {
   "Random": {
-    "accuracy": 0.9,
-    "tokens": 1149.0,
-    "time": 26.708165884017944
-  },
-  "BM25": {
-    "accuracy": 0.0,
-    "tokens": 225.0,
-    "time": 0.003282785415649414
+    "accuracy": 0.8,
+    "tokens": 325.0,
+    "time": 5.307841062545776
   },
   "Jaccard": {
     "accuracy": 1.0,
-    "tokens": 1178.0,
-    "time": 21.272888898849487
+    "tokens": 545.0,
+    "time": 9.32413387298584
   },
-  "Levenshtein": {
+  "Word2Vec": {
+    "accuracy": 0.8,
+    "tokens": 459.0,
+    "time": 19.271086931228638
+  },
+  "SBERT": {
     "accuracy": 1.0,
-    "tokens": 2049.0,
-    "time": 43.8438618183136
+    "tokens": 390.0,
+    "time": 12.441709995269775
+  },
+  "Cross-Encoder": {
+    "accuracy": 1.0,
+    "tokens": 287.0,
+    "time": 13.161623001098633
   },
   "DeepSeek-only": {
-    "accuracy": 0.7,
-    "tokens": 3228,
-    "time": 40.0
+    "accuracy": 0.85,
+    "tokens": 1600,
+    "time": 20.0
   }
 }

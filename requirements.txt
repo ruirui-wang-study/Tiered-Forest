@@ -1,0 +1,11 @@
+openai
+matplotlib
+numpy
+pandas
+openpyxl
+gensim
+scikit-learn
+rank-bm25
+Levenshtein
+sentence-transformers
+torch
