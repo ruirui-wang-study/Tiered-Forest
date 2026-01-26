@@ -11,7 +11,7 @@ Please implement a simulation environment in Python. Since we don't have the liv
 Define a `CostManager` to track usage:
 -   **Symbolic Operation** (Tier 1 Rules): 0 Tokens, 0.001s Latency.
 -   **Small Model** (BERT/Cross-Encoder/LLaMA-7B): 10 Tokens, 0.05s Latency.
--   **Large Model** (DeepSeek/GPT-4): 100 Tokens, 1.5s Latency.
+-   **Large Model** (DeepSeek): 100 Tokens, 1.5s Latency.
 
 ### B. Models to Implement
 Create a unified interface `BaseReasoner` and implement three subclasses:

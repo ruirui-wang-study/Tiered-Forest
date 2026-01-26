@@ -286,7 +286,7 @@ if __name__ == "__main__":
     kb_file = os.path.join(base_dir, "data", "MetaQA", "kb.txt")
     
     # Increase limit to 50 for more stable results
-    questions, kb = load_metaqa_data(qa_file, kb_file, limit=5) 
+    questions, kb = load_metaqa_data(qa_file, kb_file, limit=50) 
     print(f"Loaded {len(questions)} questions.")
 
     results = {}

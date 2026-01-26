@@ -1,32 +1,27 @@
 {
-  "Random": {
-    "accuracy": 0.8,
-    "tokens": 325.0,
-    "time": 5.307841062545776
-  },
-  "Jaccard": {
+  "Tiered-Forest (SBERT)": {
     "accuracy": 1.0,
-    "tokens": 545.0,
-    "time": 9.32413387298584
+    "tokens": 951.0,
+    "time": 17.869232892990112
   },
-  "Word2Vec": {
-    "accuracy": 0.8,
-    "tokens": 459.0,
-    "time": 19.271086931228638
-  },
-  "SBERT": {
+  "Tiered-Forest (Jaccard)": {
     "accuracy": 1.0,
-    "tokens": 390.0,
-    "time": 12.441709995269775
+    "tokens": 1317.0,
+    "time": 24.16503095626831
   },
-  "Cross-Encoder": {
+  "Tiered-Forest (CrossEnc)": {
+    "accuracy": 0.6,
+    "tokens": 400.0,
+    "time": 9.014781951904297
+  },
+  "FrugalGPT": {
     "accuracy": 1.0,
-    "tokens": 287.0,
-    "time": 13.161623001098633
+    "tokens": 1589.0,
+    "time": 36.32868576049805
   },
-  "DeepSeek-only": {
-    "accuracy": 0.85,
-    "tokens": 1600,
-    "time": 20.0
+  "ToG": {
+    "accuracy": 1.0,
+    "tokens": 1545,
+    "time": 29.821430921554565
   }
 }
