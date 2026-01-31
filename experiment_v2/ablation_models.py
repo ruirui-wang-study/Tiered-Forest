@@ -96,7 +96,7 @@ class TieredForestFull(BaseRoutingModel):
         
         # Tier 1.5: Candidate Generation
         self.metrics.start_timer('candidate_gen')
-        candidate = call_small_model(f"Answer briefly: {question}", max_tokens=100)
+        candidate = call_small_model(f"Question: {question}\nAnswer directly with the entity/value only. No sentences.", max_tokens=100)
         self.metrics.stop_timer('candidate_gen')
         
         # Tier 2: Semantic Scoring
@@ -123,7 +123,7 @@ class TieredForestFull(BaseRoutingModel):
         # Tier 3: LLM
         self.metrics.start_timer('tier3')
         self.metrics.record_tier_call('tier3')
-        answer = call_llm(f"Explain step by step: {question}")
+        answer = call_llm(f"Question: {question}\nAnswer directly and concisely. If listing entities, use commas. Do not explain.")
         self.metrics.stop_timer('tier3')
         
         self.metrics.record_tier1_decision(False, None, answer, ground_truth)
@@ -154,7 +154,7 @@ class TieredForestNoTier1(BaseRoutingModel):
         
         # Skip Tier 1, go directly to candidate generation
         self.metrics.start_timer('candidate_gen')
-        candidate = call_small_model(f"Answer briefly: {question}", max_tokens=100)
+        candidate = call_small_model(f"Question: {question}\nAnswer directly with the entity/value only. No sentences.", max_tokens=100)
         self.metrics.stop_timer('candidate_gen')
         
         # Tier 2: Semantic Scoring
@@ -176,7 +176,7 @@ class TieredForestNoTier1(BaseRoutingModel):
         # Tier 3: LLM
         self.metrics.start_timer('tier3')
         self.metrics.record_tier_call('tier3')
-        answer = call_llm(f"Explain step by step: {question}")
+        answer = call_llm(f"Question: {question}\nAnswer directly and concisely. If listing entities, use commas. Do not explain.")
         self.metrics.stop_timer('tier3')
         self.metrics.stop_timer('total')
         
@@ -218,7 +218,7 @@ class TieredForestNoTier2(BaseRoutingModel):
         self.metrics.start_timer('tier3')
         self.metrics.record_tier_call('tier3')
         self.metrics.record_route('tier3_direct')
-        answer = call_llm(f"Explain step by step: {question}")
+        answer = call_llm(f"Question: {question}\nAnswer directly and concisely. If listing entities, use commas. Do not explain.")
         self.metrics.stop_timer('tier3')
         
         self.metrics.record_tier1_decision(False, None, answer, ground_truth)
@@ -262,7 +262,7 @@ class TieredForestNoDynamic(BaseRoutingModel):
         
         # Candidate generation
         self.metrics.start_timer('candidate_gen')
-        candidate = call_small_model(f"Answer briefly: {question}", max_tokens=100)
+        candidate = call_small_model(f"Question: {question}\nAnswer directly with the entity/value only. No sentences.", max_tokens=100)
         self.metrics.stop_timer('candidate_gen')
         
         # Tier 2
@@ -284,7 +284,7 @@ class TieredForestNoDynamic(BaseRoutingModel):
         # Tier 3
         self.metrics.start_timer('tier3')
         self.metrics.record_tier_call('tier3')
-        answer = call_llm(f"Explain step by step: {question}")
+        answer = call_llm(f"Question: {question}\nAnswer directly and concisely. If listing entities, use commas. Do not explain.")
         self.metrics.stop_timer('tier3')
         
         self.metrics.record_tier1_decision(False, None, answer, ground_truth)
@@ -352,7 +352,7 @@ class TieredForestSingleThreshold(BaseRoutingModel):
         
         # Candidate generation
         self.metrics.start_timer('candidate_gen')
-        candidate = call_small_model(f"Answer briefly: {question}", max_tokens=100)
+        candidate = call_small_model(f"Question: {question}\nAnswer directly with the entity/value only. No sentences.", max_tokens=100)
         self.metrics.stop_timer('candidate_gen')
         
         # Tier 2
@@ -374,7 +374,7 @@ class TieredForestSingleThreshold(BaseRoutingModel):
         # Tier 3
         self.metrics.start_timer('tier3')
         self.metrics.record_tier_call('tier3')
-        answer = call_llm(f"Explain step by step: {question}")
+        answer = call_llm(f"Question: {question}\nAnswer directly and concisely. If listing entities, use commas. Do not explain.")
         self.metrics.stop_timer('tier3')
         
         self.metrics.record_tier1_decision(False, None, answer, ground_truth)
@@ -417,7 +417,7 @@ class TieredForestAggressive(BaseRoutingModel):
         
         # Candidate generation
         self.metrics.start_timer('candidate_gen')
-        candidate = call_small_model(f"Answer briefly: {question}", max_tokens=100)
+        candidate = call_small_model(f"Question: {question}\nAnswer directly with the entity/value only. No sentences.", max_tokens=100)
         self.metrics.stop_timer('candidate_gen')
         
         # Tier 2
@@ -439,7 +439,7 @@ class TieredForestAggressive(BaseRoutingModel):
         # Tier 3
         self.metrics.start_timer('tier3')
         self.metrics.record_tier_call('tier3')
-        answer = call_llm(f"Explain step by step: {question}")
+        answer = call_llm(f"Question: {question}\nAnswer directly and concisely. If listing entities, use commas. Do not explain.")
         self.metrics.stop_timer('tier3')
         
         self.metrics.record_tier1_decision(False, None, answer, ground_truth)

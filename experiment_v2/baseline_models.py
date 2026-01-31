@@ -48,7 +48,7 @@ class FrugalGPTFair(BaseRoutingModel):
         
         # Stage 1: Generate candidate and score with Cross-Encoder
         self.metrics.start_timer('candidate_gen')
-        candidate = call_small_model(f"Answer briefly: {question}", max_tokens=100)
+        candidate = call_small_model(f"Question: {question}\nAnswer directly with the entity/value only. No sentences.", max_tokens=100)
         self.metrics.stop_timer('candidate_gen')
         
         self.metrics.start_timer('tier2')
@@ -67,7 +67,7 @@ class FrugalGPTFair(BaseRoutingModel):
         self.metrics.start_timer('tier3')
         self.metrics.record_tier_call('tier3')
         self.metrics.record_route('escalate')
-        answer = call_llm(f"Explain step by step: {question}")
+        answer = call_llm(f"Question: {question}\nAnswer directly and concisely. If listing entities, use commas. Do not explain.")
         self.metrics.stop_timer('tier3')
         self.metrics.stop_timer('total')
         
@@ -97,7 +97,7 @@ class FrugalGPTSBERT(BaseRoutingModel):
         
         # Stage 1: SBERT scoring
         self.metrics.start_timer('candidate_gen')
-        candidate = call_small_model(f"Answer briefly: {question}", max_tokens=100)
+        candidate = call_small_model(f"Question: {question}\nAnswer directly with the entity/value only. No sentences.", max_tokens=100)
         self.metrics.stop_timer('candidate_gen')
         
         self.metrics.start_timer('tier2')
@@ -115,7 +115,7 @@ class FrugalGPTSBERT(BaseRoutingModel):
         self.metrics.start_timer('tier3')
         self.metrics.record_tier_call('tier3')
         self.metrics.record_route('escalate')
-        answer = call_llm(f"Explain step by step: {question}")
+        answer = call_llm(f"Question: {question}\nAnswer directly and concisely. If listing entities, use commas. Do not explain.")
         self.metrics.stop_timer('tier3')
         self.metrics.stop_timer('total')
         
@@ -165,7 +165,7 @@ class TieredForestLLaMA(BaseRoutingModel):
         
         # Tier 1.5: Candidate generation
         self.metrics.start_timer('candidate_gen')
-        candidate = call_small_model(f"Answer briefly: {question}", max_tokens=100)
+        candidate = call_small_model(f"Question: {question}\nAnswer directly with the entity/value only. No sentences.", max_tokens=100)
         self.metrics.stop_timer('candidate_gen')
         
         # Tier 2: LLaMA self-confidence scoring
@@ -188,7 +188,7 @@ class TieredForestLLaMA(BaseRoutingModel):
         # Tier 3: LLM
         self.metrics.start_timer('tier3')
         self.metrics.record_tier_call('tier3')
-        answer = call_llm(f"Explain step by step: {question}")
+        answer = call_llm(f"Question: {question}\nAnswer directly and concisely. If listing entities, use commas. Do not explain.")
         self.metrics.stop_timer('tier3')
         
         self.metrics.record_tier1_decision(False, None, answer, ground_truth)
@@ -233,7 +233,7 @@ class TieredForestSBERT(BaseRoutingModel):
         
         # Candidate generation
         self.metrics.start_timer('candidate_gen')
-        candidate = call_small_model(f"Answer briefly: {question}", max_tokens=100)
+        candidate = call_small_model(f"Question: {question}\nAnswer directly with the entity/value only. No sentences.", max_tokens=100)
         self.metrics.stop_timer('candidate_gen')
         
         # Tier 2: SBERT
@@ -256,7 +256,7 @@ class TieredForestSBERT(BaseRoutingModel):
         # Tier 3
         self.metrics.start_timer('tier3')
         self.metrics.record_tier_call('tier3')
-        answer = call_llm(f"Explain step by step: {question}")
+        answer = call_llm(f"Question: {question}\nAnswer directly and concisely. If listing entities, use commas. Do not explain.")
         self.metrics.stop_timer('tier3')
         
         self.metrics.record_tier1_decision(False, None, answer, ground_truth)
@@ -302,7 +302,7 @@ class TieredForestJaccard(BaseRoutingModel):
         
         # Candidate generation
         self.metrics.start_timer('candidate_gen')
-        candidate = call_small_model(f"Answer briefly: {question}", max_tokens=100)
+        candidate = call_small_model(f"Question: {question}\nAnswer directly with the entity/value only. No sentences.", max_tokens=100)
         self.metrics.stop_timer('candidate_gen')
         
         # Tier 2: Jaccard
@@ -325,7 +325,7 @@ class TieredForestJaccard(BaseRoutingModel):
         # Tier 3
         self.metrics.start_timer('tier3')
         self.metrics.record_tier_call('tier3')
-        answer = call_llm(f"Explain step by step: {question}")
+        answer = call_llm(f"Question: {question}\nAnswer directly and concisely. If listing entities, use commas. Do not explain.")
         self.metrics.stop_timer('tier3')
         
         self.metrics.record_tier1_decision(False, None, answer, ground_truth)
