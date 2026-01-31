@@ -1,0 +1,31 @@
+Total samples: 15
+Sample 0:
+Question: what does [Grégoire Colin] appear in
+Ground Truth: Before the Rain
+Prediction: Grégoire Colin appears in various works, including video games such as the Assassin's Creed series, 
+Full Dict: {'question': 'what does [Grégoire Colin] appear in', 'ground_truth': 'Before the Rain', 'prediction': "Grégoire Colin appears in various works, including video games such as the Assassin's Creed series, ", 'correct': False}
+--------------------
+Sample 1:
+Question: [Joe Thomas] appears in which movies
+Ground Truth: The Inbetweeners Movie
+Prediction: Joe Thomas appears in the movie "Face/Off" (1997).
+Full Dict: {'question': '[Joe Thomas] appears in which movies', 'ground_truth': 'The Inbetweeners Movie', 'prediction': 'Joe Thomas appears in the movie "Face/Off" (1997).', 'correct': False}
+--------------------
+Sample 2:
+Question: what films did [Michelle Trachtenberg] star in
+Ground Truth: Inspector Gadget
+Prediction: Michelle Trachtenberg starred in films such as "Hairspray" (2007), "Along Came Polly" (2004), and "'
+Full Dict: {'question': 'what films did [Michelle Trachtenberg] star in', 'ground_truth': 'Inspector Gadget', 'prediction': 'Michelle Trachtenberg starred in films such as "Hairspray" (2007), "Along Came Polly" (2004), and "\'', 'correct': False}
+--------------------
+Sample 3:
+Question: what does [Helen Mack] star in
+Ground Truth: The Son of Kong
+Prediction: Helen Mack stars in the television series "The Handmaid's Tale," where she plays the character of Em
+Full Dict: {'question': 'what does [Helen Mack] star in', 'ground_truth': 'The Son of Kong', 'prediction': 'Helen Mack stars in the television series "The Handmaid\'s Tale," where she plays the character of Em', 'correct': False}
+--------------------
+Sample 4:
+Question: what films did [Shahid Kapoor] act in
+Ground Truth: Haider
+Prediction: Shahid Kapoor has acted in numerous films across Bollywood and Hollywood. Some notable ones include 
+Full Dict: {'question': 'what films did [Shahid Kapoor] act in', 'ground_truth': 'Haider', 'prediction': 'Shahid Kapoor has acted in numerous films across Bollywood and Hollywood. Some notable ones include ', 'correct': False}
+--------------------
