@@ -3,6 +3,9 @@ import os
 import configparser
 
 # Load Config
+# Set Hub Mirror
+os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
+
 config = configparser.ConfigParser()
 config_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'config.ini')
 config.read(config_path)

@@ -12,7 +12,8 @@ class BaseLoader:
 
 class MetaQALoader(BaseLoader):
     def __init__(self, base_dir):
-        self.qa_path = os.path.join(base_dir, "MetaQA", "1-hop", "vanilla", "qa_test.txt")
+        # qa_test.txt is missing, use qa_dev.txt instead
+        self.qa_path = os.path.join(base_dir, "MetaQA", "1-hop", "vanilla", "qa_dev.txt")
         
     def load(self, limit=20):
         questions = []
@@ -64,7 +65,8 @@ class WebQSPLoader(BaseLoader):
 
 class LogisticsLoader(BaseLoader):
     def __init__(self, base_dir):
-        self.path = os.path.join(base_dir, "Logistics", "dynamic_supply_chain_logistics_dataset.csv")
+        # Folder is named 'Logistics Dataset'
+        self.path = os.path.join(base_dir, "Logistics Dataset", "dynamic_supply_chain_logistics_dataset.csv")
         
     def load(self, limit=20):
         questions = []
