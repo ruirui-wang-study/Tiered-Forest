@@ -1,0 +1,245 @@
+agent,question,prediction,ground_truth,correct
+Naive LLM,what movies did [Temuera Morrison] act in,Temuera Morrison is best known for playing **Jango Fett** in *Star Wars: Episode II – Attack of the ,Once Were Warriors,True
+Naive LLM,what movies did [Evelyn Venable] act in,"Evelyn Venable's notable film roles include:
+
+*   **Cradle Song** (1933) – her debut
+*   **Death Tak",Alice Adams,True
+Naive LLM,what does [Tom Cullen] act in,"Tom Cullen is known for acting in television series such as **""Downton Abbey""** (as Lord Gillingham)",Weekend,True
+Naive LLM,what movies was [Shareeka Epps] an actor in,"Shareeka Epps is known for her roles in the following films:
+
+* **Half Nelson** (2006) – Drey  
+* **",Half Nelson,True
+Naive LLM,what does [Peter Franzén] appear in,"Peter Franzén appears in the television series **""Vikings""** (as King Harald Finehair) and the film ",Ambush,False
+Naive LLM,what movies was [Charles Martin Smith] an actor in,"Charles Martin Smith has acted in numerous films, but some of his most notable roles include:
+
+*   *",American Graffiti,True
+Naive LLM,what does [Robert Stack] appear in,Robert Stack is best known for hosting the television series *Unsolved Mysteries* (1987–2002). He al,To Be or Not to Be,False
+Naive LLM,what does [Teresa Ann Savoy] appear in,"Teresa Ann Savoy is best known for appearing in films directed by **Pier Paolo Pasolini**, notably:
+",Caligula,False
+Naive LLM,what films did [Lily Tomlin] act in,"Lily Tomlin has acted in numerous films. Some of the most notable include:
+
+*   **Nashville** (1975)",I Heart Huckabees,True
+Naive LLM,what movies did [Tom Tryon] act in,"Tom Tryon acted in several films, primarily in the 1950s and early 1960s. His notable movie roles in",In Harm's Way,True
+Naive LLM,what does [Laura Harring] act in,"Laura Harring is best known for playing Rita/Camilla Rhodes in **""Mulholland Drive""** (2001). Her ot",Mulholland Drive,True
+Naive LLM,what films did [Patsha Bay] act in,"Patsha Bay is a Congolese actor known primarily for Nollywood (Nigerian) films.  
+
+He is best known ",Viva Riva!,False
+Naive LLM,[Cristina Flutur] appears in which movies,"Cristina Flutur appears in the movies **""Beyond the Hills"" (2012)** and **""Bacalaureat"" (2016)**.",Beyond the Hills,True
+Naive LLM,what movies did [Karl Hardman] act in,"Karl Hardman acted in only one film: **""Night of the Living Dead""** (1968), where he played Harry Co",Night of the Living Dead,True
+Naive LLM,what films does [Jessie Matthews] appear in,"Jessie Matthews appeared in numerous films, primarily during the 1930s. Some of her most notable one",First a Girl,True
+Naive LLM,what movies did [Terrance Zdunich] act in,"Terrance Zdunich is best known for his role in the cult musical **""Repo! The Genetic Opera""** (2008)",The Devil's Carnival,True
+Naive LLM,what films did [Cynthia Myers] star in,Cynthia Myers starred primarily in adult-oriented films during the late 1960s and early 1970s. Her m,Beyond the Valley of the Dolls,True
+Naive LLM,what movies did [Daniel Giménez Cacho] act in,"Daniel Giménez Cacho has acted in numerous films. Some notable ones include:
+
+- **""Y tu mamá también",Bad Education,False
+Naive LLM,what movies did [Javier Pereira] act in,Javier Pereira is a Spanish actor known for his roles in several Spanish-language films and televisi,The Appeared,False
+Naive LLM,what does [Adam Arkin] star in,"Adam Arkin stars in the TV series **""Chicago Hope""** (as Dr. Aaron Shutt) and has notable roles in *",With Friends Like These...,False
+Naive LLM,[Claire Skinner] appears in which movies,"Claire Skinner appears in movies such as:
+
+- **The World Is Not Enough** (1999)  
+- **Life Is Sweet*",Life Is Sweet,True
+Naive LLM,what movies did [Genevieve Tobin] star in,"Genevieve Tobin starred in numerous films, primarily during the 1930s and early 1940s. Some of her n",One Hour with You,True
+Naive LLM,what does [Sabine Azéma] act in,Sabine Azéma is a French actress known for her frequent collaborations with director Alain Resnais. ,Same Old Song,True
+Naive LLM,what movies did [Walter Connolly] star in,"Walter Connolly starred in numerous films, including notable titles such as:
+
+*   **Lady for a Day**",Twentieth Century,True
+Naive LLM,what does [Christian Serratos] act in,Christian Serratos is best known for her roles as **Angela Weber** in *The Twilight Saga* and **Rosi,96 Minutes,False
+Naive LLM,what does [Stephen Rea] act in,"Stephen Rea is known for his roles in films such as **""The Crying Game,"" ""Michael Collins,"" ""Intervi",V for Vendetta,True
+Naive LLM,what movies did [Christopher Judge] act in,"Christopher Judge is best known for playing **Teal'c** on *Stargate SG-1* (and its sequels), but his",Paradox,False
+Naive LLM,[Curtis Armstrong] appears in which movies,"Curtis Armstrong appears in movies such as *Risky Business*, *Revenge of the Nerds*, *Better Off Dea",Akeelah and the Bee,False
+Naive LLM,what films does [Matt LeBlanc] appear in,"Matt LeBlanc is best known for playing Joey Tribbiani on the TV series **""Friends""** and its spin-of",All the Queen's Men,True
+Naive LLM,what movies was [Laura Harris] an actor in,"Laura Harris is known for her roles in films such as:
+
+* **""The Faculty""** (1998)  
+* **""Dead Like M",The Faculty,True
+Naive LLM,what does [Danielle De Luca] appear in,Danielle De Luca is an Italian adult film actress. She appears primarily in adult films and has also,Naked Fear,False
+Naive LLM,what movies did [Joely Richardson] star in,"Joely Richardson has starred in numerous films. Some of her notable movies include:
+
+- **101 Dalmati",Endless Love,False
+Naive LLM,what does [Tom Atkins] appear in,"Tom Atkins appears in numerous films and TV shows, most notably in horror and genre works such as ""H",Night of the Creeps,True
+Naive LLM,what movies did [Natassia Malthe] act in,"Natassia Malthe has acted in numerous films, including notable titles such as:
+
+*   **Elektra** (200",Bloodsuckers,False
+Naive LLM,what movies did [Yutaka Hayashi] act in,"Yutaka Hayashi acted in the following movies:
+
+*   **The Last Samurai** (2003) – as Omura's Bannerma",Godzilla vs. Megalon,False
+Naive LLM,what movies did [Megs Jenkins] star in,"Megs Jenkins starred in several notable films, including:
+
+*   **The Innocents** (1961)  
+*   **Whis",The Innocents,True
+Naive LLM,[Pamela Anderson] appears in which movies,"Pamela Anderson has appeared in numerous films, with some of her notable movies including:
+
+*   **Ba",Blonde and Blonder,True
+Naive LLM,what movies did [James MacArthur] act in,James MacArthur is best known for his role as Danny “Danno” Williams on the TV series *Hawaii Five-O,Swiss Family Robinson,True
+Naive LLM,[Gene Quintano] appears in which movies,"Gene Quintano appears in the following movies as a writer:
+
+* **Police Academy 4: Citizens on Patrol",Treasure of the Four Crowns,False
+Naive LLM,what movies did [Roshan Seth] star in,"Roshan Seth starred in notable films such as:
+
+- **Gandhi** (1982) as Pandit Jawaharlal Nehru  
+- **",Not Without My Daughter,True
+Naive LLM,[Kay Kendall] appears in which movies,"Kay Kendall appeared in several films, including notable ones such as:
+
+*   **Genevieve** (1953)  
+*",Genevieve,True
+Naive LLM,what movies did [Judy Parfitt] star in,"Judy Parfitt has starred in numerous films, including notable roles in:
+
+* **Dolores Claiborne** (19",Girl with a Pearl Earring,True
+Naive LLM,what does [William Hudson] act in,"William Hudson is a fictional character, not an actor. He is portrayed by actor **Kurt Russell** in ",Attack of the 50 Foot Woman,False
+Naive LLM,what movies did [Dale Midkiff] star in,"Dale Midkiff starred in several movies, with his most notable roles being:
+
+* **Pet Sematary** (1989",Pet Sematary,True
+Naive LLM,what does [Dave O'Brien] star in,"Dave O’Brien starred in the **MGM ""Pete Smith Specialties""** series of short films, often as the com",The Devil Bat,True
+Naive LLM,what films did [Simon MacCorkindale] act in,"Simon MacCorkindale acted in numerous films, including notable titles such as:
+
+*   **Death on the N",The Riddle of the Sands,True
+Naive LLM,what does [Michelle Jenner] star in,"Michelle Jenner stars in the Spanish television series **""Isabel""** (as Queen Isabella I of Castile)",Extraterrestrial,False
+Naive LLM,what movies was [Barbara Bates] an actor in,"Barbara Bates was an actress known for her roles in films such as:
+
+* **""June Bride""** (1948)  
+* **",The Inspector General,True
+Naive LLM,what does [Mark Eden] act in,Mark Eden is best known for his role as **Sir Charles Cartwright** in the 1983 BBC adaptation of Aga,Attack on the Iron Coast,False
+Naive LLM,what movies did [Alain Libolt] star in,"Alain Libolt starred in films such as:
+
+* **Le Mépris (Contempt)** (1963) – as The Assistant Directo",Autumn Tale,False
+FrugalGPT,what movies did [Temuera Morrison] act in,"Temuera Morrison acted in a variety of movies including ""Patriots Day,"" ""The Great Wall,"" and ""Aveng",Once Were Warriors,False
+FrugalGPT,what movies did [Evelyn Venable] act in,"Evelyn Venable appeared in the movies ""Cat People"" and ""The Beast with Five Fingers.""",Alice Adams,False
+FrugalGPT,what does [Tom Cullen] act in,"Tom Cullen acts in the television series ""Stranger Things.""",Weekend,False
+FrugalGPT,what movies was [Shareeka Epps] an actor in,"Shareeka Epps was an actor in the movie ""The Book Thief.""",Half Nelson,False
+FrugalGPT,what does [Peter Franzén] appear in,"Peter Franzén appears in the Swedish drama series ""The Bridge"" (original Swedish title ""Bron""), wher",Ambush,False
+FrugalGPT,what movies was [Charles Martin Smith] an actor in,"Charles Martin Smith appeared in a variety of movies including ""The Shawshank Redemption,"" ""Patriot ",American Graffiti,False
+FrugalGPT,what does [Robert Stack] appear in,"Robert Stack appeared in various television shows and films, most notably in the TV series ""Night Ga",To Be or Not to Be,False
+FrugalGPT,what does [Teresa Ann Savoy] appear in,"Teresa Ann Savoy appears in the HBO television series ""The Sopranos.""",Caligula,False
+FrugalGPT,what films did [Lily Tomlin] act in,"Lily Tomlin acted in films such as ""9 to 5,"" ""Grandma's Boy,"" and ""Happy Christmas,"" among others.",I Heart Huckabees,False
+FrugalGPT,what movies did [Tom Tryon] act in,"Tom Tryon acted in a variety of films including ""The Carvers,"" ""Theurgy,"" and ""The World According t",In Harm's Way,False
+FrugalGPT,what does [Laura Harring] act in,"Laura Harring acts in various films and television shows, including ""Blue Velvet"" and ""Halt and Catc",Mulholland Drive,False
+FrugalGPT,what films did [Patsha Bay] act in,I couldn't find any information on an actor named Patsha Bay. Could you provide more details or chec,Viva Riva!,False
+FrugalGPT,[Cristina Flutur] appears in which movies,"Cristina Flutur appears in movies such as ""4 Months, 3 Weeks and 2 Days"" and ""The Death of Mr. Lazar",Beyond the Hills,False
+FrugalGPT,what movies did [Karl Hardman] act in,"Karl Hardman acted in a variety of movies including ""Misery,"" ""The Stand,"" and ""Creepshow.""",Night of the Living Dead,False
+FrugalGPT,what films does [Jessie Matthews] appear in,"Jessie Matthews appears in films such as ""Spring in Park City,"" ""The Wicked Lady,"" and ""The Private ",First a Girl,False
+FrugalGPT,what movies did [Terrance Zdunich] act in,"Terrance Zdunich acted in the movies ""The Rocketeer"" and ""True Lies,"" among others.",The Devil's Carnival,False
+FrugalGPT,what films did [Cynthia Myers] star in,"Cynthia Myers starred in films such as ""The Best Man"" (1966) and ""The Swinger"" (1967).",Beyond the Valley of the Dolls,False
+FrugalGPT,what movies did [Daniel Giménez Cacho] act in,"Daniel Giménez Cacho acted in movies such as ""The Motorcycle Diaries,"" ""Vicky Cristina Barcelona,"" a",Bad Education,False
+FrugalGPT,what movies did [Javier Pereira] act in,"Javier Pereira acted in movies such as ""The Terminal"" and ""Mr. & Mrs. Smith.""",The Appeared,False
+FrugalGPT,what does [Adam Arkin] star in,"Adam Arkin stars in various productions, including Broadway shows and films, but without a specific ",With Friends Like These...,False
+FrugalGPT,[Claire Skinner] appears in which movies,"Claire Skinner appears in movies such as ""Shaun of the Dead,"" ""Hot Fuzz,"" and ""The World's End,"" amo",Life Is Sweet,False
+FrugalGPT,what movies did [Genevieve Tobin] star in,"Genevieve Tobin starred in movies such as ""The Other Sister"" and ""The Other Two.""",One Hour with You,False
+FrugalGPT,what does [Sabine Azéma] act in,Sabine Azéma acts in French television series and films.,Same Old Song,False
+FrugalGPT,what movies did [Walter Connolly] star in,"Walter Connolly starred in movies such as ""The Thomas Crown Affair"" (1968) and ""The Franchise Affair",Twentieth Century,False
+FrugalGPT,what does [Christian Serratos] act in,"Christian Serratos acts in shows like ""Agents of S.H.I.E.L.D."" and movies such as ""X-Men: Dark Phoen",96 Minutes,False
+FrugalGPT,what does [Stephen Rea] act in,Stephen Rea is an actor who has appeared in numerous films and television shows.,V for Vendetta,False
+FrugalGPT,what movies did [Christopher Judge] act in,"Christopher Judge has acted in movies such as ""The Adventures of Baron Munchausen,"" ""The Three Muske",Paradox,False
+FrugalGPT,[Curtis Armstrong] appears in which movies,"Curtis Armstrong appears in movies such as ""The Departed,"" ""The Town,"" and ""Warrior.""",Akeelah and the Bee,False
+FrugalGPT,what films does [Matt LeBlanc] appear in,"Matt LeBlanc appears in a variety of films including ""Friends with Benefits,"" ""The Benchwarmers,"" an",All the Queen's Men,False
+FrugalGPT,what movies was [Laura Harris] an actor in,I couldn't find specific movies that Laura Harris has acted in. Could you provide more details or ve,The Faculty,False
+FrugalGPT,what does [Danielle De Luca] appear in,"Danielle De Luca appears in the TV show ""Law & Order: Special Victims Unit.""",Naked Fear,False
+FrugalGPT,what movies did [Joely Richardson] star in,"Joely Richardson starred in movies such as ""Charlie's Angels,"" ""Mr. & Mrs. Smith,"" and ""The Tourist.",Endless Love,False
+FrugalGPT,what does [Tom Atkins] appear in,"Tom Atkins appears in various films, television shows, and documentaries, including ""Alien,"" ""Die Ha",Night of the Creeps,False
+FrugalGPT,what movies did [Natassia Malthe] act in,"Natassia Malthe acted in movies such as ""The Fifth Element,"" ""The Crow: City of Angels,"" and ""The Gi",Bloodsuckers,False
+FrugalGPT,what movies did [Yutaka Hayashi] act in,"Yutaka Hayashi acted in movies such as ""The Secret in Their Eyes"" and ""The Girl with the Dragon Tatt",Godzilla vs. Megalon,False
+FrugalGPT,what movies did [Megs Jenkins] star in,"I'm sorry, but ""Megs Jenkins"" is not a recognized name in the movie industry. Could you please provi",The Innocents,False
+FrugalGPT,[Pamela Anderson] appears in which movies,"Pamela Anderson appeared in movies such as ""Endless Love,"" ""Beverly Hills Cop III,"" and ""Showgirls.""",Blonde and Blonder,False
+FrugalGPT,what movies did [James MacArthur] act in,"James MacArthur appeared in movies such as ""The Edge of Seventeen"" and ""Vampire in Brooklyn.""",Swiss Family Robinson,False
+FrugalGPT,[Gene Quintano] appears in which movies,"Gene Quintano appears in the movies ""The Equalizer"" and ""The Equalizer 2.""",Treasure of the Four Crowns,False
+FrugalGPT,what movies did [Roshan Seth] star in,"Roshan Seth starred in a variety of films including ""East Is East,"" ""Vivah,"" and ""The Hundred-Year-O",Not Without My Daughter,False
+FrugalGPT,[Kay Kendall] appears in which movies,"Kay Kendall appears in movies such as ""A Matter of Life and Death,"" ""A Town Like Alice,"" and ""Kindne",Genevieve,False
+FrugalGPT,what movies did [Judy Parfitt] star in,"Judy Parfitt starred in movies such as ""The Wicker Man"" and ""The Three Strangers.""",Girl with a Pearl Earring,False
+FrugalGPT,what does [William Hudson] act in,"William Hudson acts in the television series ""The Last Ship.""",Attack of the 50 Foot Woman,False
+FrugalGPT,what movies did [Dale Midkiff] star in,"Dale Midkiff starred in the movies ""Major League"" and ""Major League II.""",Pet Sematary,False
+FrugalGPT,what does [Dave O'Brien] star in,"Dave O'Brien stars in the Netflix comedy series ""Disjointed.""",The Devil Bat,False
+FrugalGPT,what films did [Simon MacCorkindale] act in,"Simon MacCorkindale is known for his roles in films such as ""Monty Python and the Holy Grail,"" ""The ",The Riddle of the Sands,False
+FrugalGPT,what does [Michelle Jenner] star in,"Michelle Jenner stars in the Spanish television series ""La Casa de Papel"" (Money Heist).",Extraterrestrial,False
+FrugalGPT,what movies was [Barbara Bates] an actor in,"Barbara Bates was an actress in movies such as ""The Longest Week"" and ""The Ghost and Mrs. Muir.""",The Inspector General,False
+FrugalGPT,what does [Mark Eden] act in,"Mark Eden acts in the TV series ""Person of Interest.""",Attack on the Iron Coast,False
+FrugalGPT,what movies did [Alain Libolt] star in,"Alain Libolt starred in movies such as ""The Round-Up"" (1967) and ""The Wages of Fear"" (1953).",Autumn Tale,False
+Tiered-Forest,what movies did [Temuera Morrison] act in,"Temuera Morrison acted in a variety of movies including ""Patriots Day,"" ""Avengers: Infinity War,"" an",Once Were Warriors,False
+Tiered-Forest,what movies did [Evelyn Venable] act in,"Evelyn Venable's notable film roles include:
+
+*   **Cradle Song** (1933) – her debut
+*   **Death Tak",Alice Adams,True
+Tiered-Forest,what does [Tom Cullen] act in,"Tom Cullen acts in various television shows and films, though without a specific context, it's hard ",Weekend,False
+Tiered-Forest,what movies was [Shareeka Epps] an actor in,"Shareeka Epps is known for her roles in the following films:
+
+* **Half Nelson** (2006) – Drey  
+* **",Half Nelson,True
+Tiered-Forest,what does [Peter Franzén] appear in,"Peter Franzén appears in the television series **""Vikings""** (as King Harald Finehair) and the film ",Ambush,False
+Tiered-Forest,what movies was [Charles Martin Smith] an actor in,"Charles Martin Smith has acted in numerous films, but some of his most notable roles include:
+
+*   *",American Graffiti,True
+Tiered-Forest,what does [Robert Stack] appear in,Robert Stack is best known for hosting the television series *Unsolved Mysteries* (1987–2002). He al,To Be or Not to Be,False
+Tiered-Forest,what does [Teresa Ann Savoy] appear in,"Teresa Ann Savoy is best known for appearing in films directed by **Pier Paolo Pasolini**, notably:
+",Caligula,False
+Tiered-Forest,what films did [Lily Tomlin] act in,"i heart huckabees, big business, moment by moment",I Heart Huckabees,True
+Tiered-Forest,what movies did [Tom Tryon] act in,"Tom Tryon acted in a variety of movies including ""The World's Greatest Lover,"" ""The Ten Commandments",In Harm's Way,False
+Tiered-Forest,what does [Laura Harring] act in,"Laura Harring acts in various films and television shows, including ""Blue Velvet"" and ""Halt and Catc",Mulholland Drive,False
+Tiered-Forest,what films did [Patsha Bay] act in,viva riva!,Viva Riva!,True
+Tiered-Forest,[Cristina Flutur] appears in which movies,"Cristina Flutur appears in the movies **""Beyond the Hills"" (2012)** and **""Bacalaureat"" (2016)**.",Beyond the Hills,True
+Tiered-Forest,what movies did [Karl Hardman] act in,"Karl Hardman acted in a variety of movies including ""Cat Ballou,"" ""The Dirty Dozen,"" and ""Butch Cass",Night of the Living Dead,False
+Tiered-Forest,what films does [Jessie Matthews] appear in,"Jessie Matthews appeared in numerous films, primarily during the 1930s. Some of her most notable one",First a Girl,True
+Tiered-Forest,what movies did [Terrance Zdunich] act in,"Terrance Zdunich acted in movies such as ""The Nutty Professor"" and ""Bill & Ted's Excellent Adventure",The Devil's Carnival,False
+Tiered-Forest,what films did [Cynthia Myers] star in,Cynthia Myers starred primarily in adult-oriented films during the late 1960s and early 1970s. Her m,Beyond the Valley of the Dolls,True
+Tiered-Forest,what movies did [Daniel Giménez Cacho] act in,"Daniel Giménez Cacho acted in a variety of movies including ""The Secret in Their Eyes,"" ""The Maid,"" ",Bad Education,False
+Tiered-Forest,what movies did [Javier Pereira] act in,"Javier Pereira acted in movies such as ""Skyfall,"" ""The Theory of Everything,"" and ""The Imitation Gam",The Appeared,False
+Tiered-Forest,what does [Adam Arkin] star in,"Adam Arkin stars in the TV series **""Chicago Hope""** (as Dr. Aaron Shutt) and has notable roles in *",With Friends Like These...,False
+Tiered-Forest,[Claire Skinner] appears in which movies,"Claire Skinner appears in movies such as:
+
+- **The World Is Not Enough** (1999)  
+- **Life Is Sweet*",Life Is Sweet,True
+Tiered-Forest,what movies did [Genevieve Tobin] star in,"Genevieve Tobin starred in numerous films, primarily during the 1930s and early 1940s. Some of her n",One Hour with You,True
+Tiered-Forest,what does [Sabine Azéma] act in,Sabine Azéma is a French actress known for her frequent collaborations with director Alain Resnais. ,Same Old Song,True
+Tiered-Forest,what movies did [Walter Connolly] star in,"Walter Connolly starred in numerous films, including notable titles such as:
+
+*   **Lady for a Day**",Twentieth Century,True
+Tiered-Forest,what does [Christian Serratos] act in,"Christian Serratos acts in shows like ""Marvel's Legionary"" and ""Raven Wars,"" and is known for her ro",96 Minutes,False
+Tiered-Forest,what does [Stephen Rea] act in,Stephen Rea is an actor who has appeared in numerous films and television shows.,V for Vendetta,False
+Tiered-Forest,what movies did [Christopher Judge] act in,"Christopher Judge acted in movies such as ""The Green Mile,"" ""Stargate,"" and ""The 6th Day.""",Paradox,False
+Tiered-Forest,[Curtis Armstrong] appears in which movies,"Curtis Armstrong appears in movies such as *Risky Business*, *Revenge of the Nerds*, *Better Off Dea",Akeelah and the Bee,False
+Tiered-Forest,what films does [Matt LeBlanc] appear in,"Matt LeBlanc is best known for playing Joey Tribbiani on the TV series **""Friends""** and its spin-of",All the Queen's Men,True
+Tiered-Forest,what movies was [Laura Harris] an actor in,"Laura Harris is known for her roles in films such as:
+
+* **""The Faculty""** (1998)  
+* **""Dead Like M",The Faculty,True
+Tiered-Forest,what does [Danielle De Luca] appear in,Danielle De Luca is an Italian adult film actress. She appears primarily in adult films and has also,Naked Fear,False
+Tiered-Forest,what movies did [Joely Richardson] star in,"Joely Richardson has starred in numerous films. Some of her notable movies include:
+
+- **101 Dalmati",Endless Love,False
+Tiered-Forest,what does [Tom Atkins] appear in,"Tom Atkins appears in numerous films and TV shows, most notably in horror and genre works such as ""H",Night of the Creeps,True
+Tiered-Forest,what movies did [Natassia Malthe] act in,"Natassia Malthe acted in movies such as ""The Girl with the Dragon Tattoo,"" ""Starship Troopers,"" and ",Bloodsuckers,False
+Tiered-Forest,what movies did [Yutaka Hayashi] act in,godzilla vs. megalon,Godzilla vs. Megalon,True
+Tiered-Forest,what movies did [Megs Jenkins] star in,"Megs Jenkins starred in several notable films, including:
+
+*   **The Innocents** (1961)  
+*   **Whis",The Innocents,True
+Tiered-Forest,[Pamela Anderson] appears in which movies,"Pamela Anderson has appeared in numerous films, with some of her notable movies including:
+
+*   **Ba",Blonde and Blonder,True
+Tiered-Forest,what movies did [James MacArthur] act in,"James MacArthur appeared in movies such as ""The Blue Lagoon"" (1982) and its remake ""The Blue Lagoon""",Swiss Family Robinson,False
+Tiered-Forest,[Gene Quintano] appears in which movies,"Gene Quintano appears in the following movies as a writer:
+
+* **Police Academy 4: Citizens on Patrol",Treasure of the Four Crowns,False
+Tiered-Forest,what movies did [Roshan Seth] star in,"Roshan Seth starred in notable films such as:
+
+- **Gandhi** (1982) as Pandit Jawaharlal Nehru  
+- **",Not Without My Daughter,True
+Tiered-Forest,[Kay Kendall] appears in which movies,"Kay Kendall appeared in several films, including notable ones such as:
+
+*   **Genevieve** (1953)  
+*",Genevieve,True
+Tiered-Forest,what movies did [Judy Parfitt] star in,"Judy Parfitt has starred in numerous films, including notable roles in:
+
+* **Dolores Claiborne** (19",Girl with a Pearl Earring,True
+Tiered-Forest,what does [William Hudson] act in,"William Hudson is known for acting in the TV series ""The Crown.""",Attack of the 50 Foot Woman,False
+Tiered-Forest,what movies did [Dale Midkiff] star in,"Dale Midkiff starred in several movies, with his most notable roles being:
+
+* **Pet Sematary** (1989",Pet Sematary,True
+Tiered-Forest,what does [Dave O'Brien] star in,"Dave O’Brien starred in the **MGM ""Pete Smith Specialties""** series of short films, often as the com",The Devil Bat,True
+Tiered-Forest,what films did [Simon MacCorkindale] act in,"Simon MacCorkindale is known for his roles in ""The Lord of the Rings"" film trilogy and ""Doctor Who.""",The Riddle of the Sands,False
+Tiered-Forest,what does [Michelle Jenner] star in,"Michelle Jenner stars in the Spanish television series **""Isabel""** (as Queen Isabella I of Castile)",Extraterrestrial,False
+Tiered-Forest,what movies was [Barbara Bates] an actor in,"Barbara Bates was an actress known for her roles in films such as:
+
+* **""June Bride""** (1948)  
+* **",The Inspector General,True
+Tiered-Forest,what does [Mark Eden] act in,"Mark Eden acts in the TV series ""Westworld.""",Attack on the Iron Coast,False
+Tiered-Forest,what movies did [Alain Libolt] star in,"Alain Libolt starred in films such as:
+
+* **Le Mépris (Contempt)** (1963) – as The Assistant Directo",Autumn Tale,False

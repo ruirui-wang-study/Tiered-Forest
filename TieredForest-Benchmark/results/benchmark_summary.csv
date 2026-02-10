@@ -1,0 +1,4 @@
+agent,description,accuracy,correct_count,total_questions,total_cost_usd,avg_cost_usd,total_tokens,avg_tokens,avg_latency_s,total_time_s,small_model_pct,large_model_pct,tier1_pct,tier2_pct,tier3_pct
+Naive LLM,直接使用大模型,0.62,31,50,0.0,0.0,0,0.0,0.0,0.011009931564331055,,,,,
+FrugalGPT,小模型→大模型级联,0.0,0,50,0.0007331999999999999,1.4663999999999999e-05,3666,73.32,0.642614369392395,34.12369680404663,100.0,0.0,,,
+Tiered-Forest,三层路由（符号→语义→LLM）,0.48,24,50,0.0002382,4.764e-06,1191,23.82,0.14460422950744628,8.060670852661133,,,6.0,32.0,62.0
