@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 完整 Benchmark - 对比 Tiered-Forest vs Baselines
-测试 50 个问题，对比三种方法的性能
+测试 50 个问题，对比不同方法的性能
 """
 
 import os
@@ -20,7 +20,6 @@ from src.utils.cache_manager import LLMCache
 from src.utils.logger import setup_logger
 from src.agents.forest_agent import TieredForestAgent
 from src.agents.naive_agent import NaiveLLMAgent
-from src.agents.frugal_agent import FrugalGPTAgent
 
 def evaluate_accuracy(prediction: str, ground_truths: list) -> bool:
     """评估准确性"""
@@ -38,7 +37,7 @@ def run_benchmark():
     
     # 设置路径
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    data_dir = os.path.join(base_dir, "data", "metaqa")
+    data_dir = os.path.join(base_dir, "data", "MetaQA", "1-hop", "vanilla")
     kb_path = os.path.join(base_dir, "data", "MetaQA", "kb.txt")
     cache_dir = os.path.join(base_dir, "data", "processed")
     llm_cache_path = os.path.join(base_dir, "data", "cache", "llm_responses.json")
@@ -67,16 +66,6 @@ def run_benchmark():
                 "cache_manager": cache_manager
             },
             "description": "直接使用大模型"
-        },
-        {
-            "name": "FrugalGPT",
-            "class": FrugalGPTAgent,
-            "params": {
-                "monitor": None,
-                "cache_manager": cache_manager,
-                "confidence_threshold": 0.7
-            },
-            "description": "小模型→大模型级联"
         },
         {
             "name": "Tiered-Forest",
@@ -164,11 +153,6 @@ def run_benchmark():
             print(f"    Tier 1 (Symbolic): {tier_usage['tier1']} ({tier_usage['tier1']/len(test_dataset)*100:.1f}%)")
             print(f"    Tier 2 (Semantic): {tier_usage['tier2']} ({tier_usage['tier2']/len(test_dataset)*100:.1f}%)")
             print(f"    Tier 3 (LLM): {tier_usage['tier3']} ({tier_usage['tier3']/len(test_dataset)*100:.1f}%)")
-        elif agent_config['name'] == "FrugalGPT":
-            usage_stats = agent.get_usage_stats()
-            print(f"\n  模型使用分布:")
-            print(f"    小模型: {usage_stats['small_model']} ({usage_stats['small_model_pct']:.1f}%)")
-            print(f"    大模型: {usage_stats['large_model']} ({usage_stats['large_model_pct']:.1f}%)")
         
         # 保存到总结果
         result = {
@@ -190,9 +174,6 @@ def run_benchmark():
             result['tier1_pct'] = tier_usage['tier1']/len(test_dataset)*100
             result['tier2_pct'] = tier_usage['tier2']/len(test_dataset)*100
             result['tier3_pct'] = tier_usage['tier3']/len(test_dataset)*100
-        elif agent_config['name'] == "FrugalGPT":
-            result['small_model_pct'] = usage_stats['small_model_pct']
-            result['large_model_pct'] = usage_stats['large_model_pct']
         
         all_results.append(result)
     
