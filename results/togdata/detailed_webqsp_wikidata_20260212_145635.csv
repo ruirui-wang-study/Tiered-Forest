@@ -1,0 +1,261 @@
+id,dataset,split,question,prediction,answers,agent,raw_prediction,correct
+WebQTest-1198,webqsp,test,who influenced samuel taylor coleridge?,"Samuel Taylor Coleridge was influenced by:
+
+1. **German philosophers and writers**, especially **Immanuel Kant** (transcendental idealism) and **Friedrich Schelling** (nature and the absolute).
+2. **Platonist and Neoplatonist** thought, which shaped his ideas on imagination and unity.
+3. **The poet William Wordsworth**, through personal collaboration and mutual challenge.
+4. **Earlier English poets** like **William Shakespeare** and **John Milton**.
+5. **Theological writers**, particularly Unitarian and mystic thinkers.","['Giambattista Vico', 'Baruch Spinoza', 'Thomas Browne', 'Friedrich Wilhelm Joseph Schelling', 'Emanuel Swedenborg', 'Immanuel Kant', 'John Milton', 'William Shakespeare', 'Robert Burns', 'Algernon Charles Swinburne']",Tiered-Forest,"Samuel Taylor Coleridge was influenced by:
+
+1. **German philosophers and writers**, especially **Immanuel Kant** (transcendental idealism) and **Friedrich Schelling** (nature and the absolute).
+2. **Platonist and Neoplatonist** thought, which shaped his ideas on imagination and unity.
+3. **The poet William Wordsworth**, through personal collaboration and mutual challenge.
+4. **Earlier English poets** like **William Shakespeare** and **John Milton**.
+5. **Theological writers**, particularly Unitarian and mystic thinkers.",True
+WebQTest-1092,webqsp,test,who did viggo mortensen play in lord of the rings?,Viggo Mortensen played **Aragorn** in *The Lord of the Rings* film trilogy.,['Aragorn'],Tiered-Forest,Viggo Mortensen played **Aragorn** in *The Lord of the Rings* film trilogy.,True
+WebQTest-713,webqsp,test,what county is st. louis park in?,"St. Louis Park is in Hennepin County, Minnesota.",['Hennepin County'],Tiered-Forest,"St. Louis Park is in Hennepin County, Minnesota.",True
+WebQTest-1637,webqsp,test,what are the catholic holy days?,"Catholic holy days include Sundays, Feasts of Our Lord, Memorials of Our Lord, Feasts of the Blessed Virgin Mary, Memorials of the Blessed Virgin Mary, Feasts of the Saints, and Memorials of the Saints.","['Feast of St. Margaret of the Árpád House', 'Feast of Our Lady of Hungary', 'Feast of Our Lady of the Rosary', ""Our Lady of Aparecida's day"", 'Father Damien Day', 'Our Lady of Guadalupe Day', 'St. Spiridon Day', ""Saint Nicholas' Eve"", 'Feast of Assumption', ""Euthymius the Great's Feast Day"", 'The Feast of Our Lady of Mount Carmel', ""St. Anthony's Day"", 'Feast of Our Lady of Sorrows', ""St Joseph's Day"", ""Saint Patrick's Day"", 'Maundy Thursday', ""St. Stephen's Day"", 'Corpus Christi', 'Nativity of Mary', 'Olsok', 'Feast of the Immaculate Conception', 'Feast of the Cross', 'Feast of Christ the King', 'Name day', 'Fat Thursday', 'World Day of Peace', 'Palm Sunday', 'Saints Cyril and Methodius Day', 'Solemnity of Mary, Mother of God', 'Feast of Saints Peter and Paul', ""St Crispin's Day"", ""St Casimir's Day"", ""All Saints' Day"", 'Feast of St Francis of Assisi', 'St Nicholas Day']",Tiered-Forest,"Catholic holy days include Sundays, Feasts of Our Lord, Memorials of Our Lord, Feasts of the Blessed Virgin Mary, Memorials of the Blessed Virgin Mary, Feasts of the Saints, and Memorials of the Saints.",False
+WebQTest-1241,webqsp,test,where does the columbia river start?,"The Columbia River starts at the confluence of the East and West Forks, which begin in the Rocky Mountains and the Cascades, respectively.",['Columbia Lake'],Tiered-Forest,"The Columbia River starts at the confluence of the East and West Forks, which begin in the Rocky Mountains and the Cascades, respectively.",False
+WebQTest-377,webqsp,test,what school did michael jordan attend?,Michael Jordan attended the University of North Carolina at Chapel Hill.,"['Emsley A. Laney High School', 'University of North Carolina at Chapel Hill']",Tiered-Forest,Michael Jordan attended the University of North Carolina at Chapel Hill.,True
+WebQTest-1488,webqsp,test,what type of art does marc chagall do?,"Marc Chagall's art does not fit neatly into a single category like portrait or landscape. While his work contains elements of many styles, he is best described as a pioneer of **modernism** with a unique **symbolic and poetic style**.
+
+His paintings often blend:
+*   **Cubist** fragmentation
+*   **Fauvist** color
+*   **Surrealist** dream imagery
+*   **Folk art** from his Russian-Jewish heritage
+
+So, while he painted figures (portraits) and scenes (landscapes), the overarching type is a highly personal, avant-garde modern art.","['Modern art', 'Fauvism', 'Surrealism', 'Cubism', 'Expressionism']",Tiered-Forest,"Marc Chagall's art does not fit neatly into a single category like portrait or landscape. While his work contains elements of many styles, he is best described as a pioneer of **modernism** with a unique **symbolic and poetic style**.
+
+His paintings often blend:
+*   **Cubist** fragmentation
+*   **Fauvist** color
+*   **Surrealist** dream imagery
+*   **Folk art** from his Russian-Jewish heritage
+
+So, while he painted figures (portraits) and scenes (landscapes), the overarching type is a highly personal, avant-garde modern art.",True
+WebQTest-383,webqsp,test,what language do chinese people write in?,"Chinese people write in Chinese characters, which can be in various scripts like Traditional or Simplified Chinese.","['Nüshu script', 'Simplified Chinese character', 'Traditional Chinese characters', ""'Phags-pa script"", 'Chinese characters']",Tiered-Forest,"Chinese people write in Chinese characters, which can be in various scripts like Traditional or Simplified Chinese.",True
+WebQTest-1619,webqsp,test,where do the appalachian mountains run?,The Appalachian mountains run from Newfoundland in Canada south to Alabama in the United States.,['North America'],Tiered-Forest,The Appalachian mountains run from Newfoundland in Canada south to Alabama in the United States.,False
+WebQTest-1508,webqsp,test,when did bill clinton go to college?,"Bill Clinton attended Georgetown University from 1964 to 1968, where he earned a Bachelor of Science in Foreign Service. He then attended Oxford University as a Rhodes Scholar from 1968 to 1970, followed by Yale Law School from 1970 to 1973.","['Yale Law School', 'Edmund A. Walsh School of Foreign Service', 'University of Oxford', 'University Yale', 'Georgetown University', 'University College, Oxford']",Tiered-Forest,"Bill Clinton attended Georgetown University from 1964 to 1968, where he earned a Bachelor of Science in Foreign Service. He then attended Oxford University as a Rhodes Scholar from 1968 to 1970, followed by Yale Law School from 1970 to 1973.",True
+WebQTest-266,webqsp,test,what is there to do for fun in kansas city?,"Kansas City offers fun activities like visiting the Negro Leagues Baseball Museum, exploring the National World War I Museum, enjoying the Kauffman Center for the Performing Arts, or indulging in its famous barbecue at local restaurants.","['Kansas City Zoo', 'Kauffman Center for the Performing Arts', '18th and Vine-Downtown East', 'Kemper Museum of Contemporary Art', 'Liberty Memorial', 'Harry S. Truman Presidential Library and Museum', 'Crown Center', 'Worlds of Fun', 'Sprint Center', 'Negro Leagues Baseball Museum', 'Boulevard Brewing Company', 'Oceans of Fun', 'Hotel Phillips', 'Deer Creek Golf Course', 'Ewing and Muriel Kauffman Memorial Garden']",Tiered-Forest,"Kansas City offers fun activities like visiting the Negro Leagues Baseball Museum, exploring the National World War I Museum, enjoying the Kauffman Center for the Performing Arts, or indulging in its famous barbecue at local restaurants.",True
+WebQTest-191,webqsp,test,where did drew brees go to college wikianswers?,Drew Brees went to college at the University of Southern California (USC).,"['Stanford Graduate School of Business', 'Purdue University']",Tiered-Forest,Drew Brees went to college at the University of Southern California (USC).,False
+WebQTest-554,webqsp,test,what money do they use in spain?,Spain uses the **Euro (€)** as its official currency.,['Euro'],Tiered-Forest,Spain uses the **Euro (€)** as its official currency.,True
+WebQTest-637,webqsp,test,what type of government did soviet union have?,The Soviet Union had a communist government under the control of the Communist Party.,"['Communist state', 'Socialist state', 'Soviet democracy', 'Parliamentary republic']",Tiered-Forest,The Soviet Union had a communist government under the control of the Communist Party.,False
+WebQTest-875,webqsp,test,where did hugo chavez go to school?,"Hugo Chávez attended the Military Academy of Venezuela (Academia Militar de Venezuela), graduating in 1975 with a degree in Military Arts and Sciences. He also later pursued postgraduate studies in political science at Simón Bolívar University, though he did not complete that program.","['Julian Pino School', ""Daniel Florencio O'Leary School"", 'Simón Bolívar University', 'Bolivarian Military University of Venezuela']",Tiered-Forest,"Hugo Chávez attended the Military Academy of Venezuela (Academia Militar de Venezuela), graduating in 1975 with a degree in Military Arts and Sciences. He also later pursued postgraduate studies in political science at Simón Bolívar University, though he did not complete that program.",True
+WebQTest-438,webqsp,test,what university did romney graduated from?,Mitt Romney graduated from Brigham Young University (undergraduate) and later earned joint Juris Doctor and Master of Business Administration degrees from Harvard University.,['Brigham Young University'],Tiered-Forest,Mitt Romney graduated from Brigham Young University (undergraduate) and later earned joint Juris Doctor and Master of Business Administration degrees from Harvard University.,True
+WebQTest-234,webqsp,test,what countries does the panama canal go through?,The Panama Canal goes through Panama.,['Panama'],Tiered-Forest,The Panama Canal goes through Panama.,True
+WebQTest-461,webqsp,test,where did clay matthews go to school?,Clay Matthews attended the University of Southern California (USC).,"['University of Southern California', 'Agoura High School']",Tiered-Forest,Clay Matthews attended the University of Southern California (USC).,True
+WebQTest-1441,webqsp,test,where all did picasso live?,"Picasso lived in:  
+Málaga, Spain (birth)  
+A Coruña, Spain  
+Barcelona, Spain  
+Madrid, Spain  
+Paris, France  
+Various places in southern France (including Antibes, Vallauris, Cannes, Mougins)","['Málaga', 'Madrid', 'France']",Tiered-Forest,"Picasso lived in:  
+Málaga, Spain (birth)  
+A Coruña, Spain  
+Barcelona, Spain  
+Madrid, Spain  
+Paris, France  
+Various places in southern France (including Antibes, Vallauris, Cannes, Mougins)",True
+WebQTest-1622,webqsp,test,what ocean is around hawaii?,The Pacific Ocean surrounds Hawaii.,['Pacific Ocean'],Tiered-Forest,The Pacific Ocean surrounds Hawaii.,True
+WebQTest-1757,webqsp,test,what did michael crabtree do?,Michael Crabtree was a film producer known for movies such as *Tender Mercies* and *Murphy's Romance*.,"['Wide receiver', 'Athlete', 'American football player']",Tiered-Forest,Michael Crabtree was a film producer known for movies such as *Tender Mercies* and *Murphy's Romance*.,False
+WebQTest-1328,webqsp,test,what did hayes do?,"Rutherford B. Hayes served as the 19th President of the United States, resolving a contentious election through a controversial compromise.",['US President'],Tiered-Forest,"Rutherford B. Hayes served as the 19th President of the United States, resolving a contentious election through a controversial compromise.",False
+WebQTest-296,webqsp,test,what kind of government does libya have today?,"Libya has a decentralized system with a presidential council and various autonomous regions, following the 2011 revolution and subsequent political developments.","['Provisional government', 'Parliamentary republic']",Tiered-Forest,"Libya has a decentralized system with a presidential council and various autonomous regions, following the 2011 revolution and subsequent political developments.",False
+WebQTest-527,webqsp,test,what country borders slovakia?,"Several countries border Slovakia, including Austria, Hungary, Poland, Ukraine, and Czech Republic.","['Czech Republic', 'Hungary', 'Poland', 'Ukraine', 'Austria']",Tiered-Forest,"Several countries border Slovakia, including Austria, Hungary, Poland, Ukraine, and Czech Republic.",True
+WebQTest-2001,webqsp,test,who won the 2000 fa cup final?,Manchester United won the 2000 FA Cup final.,['Chelsea F.C.'],Tiered-Forest,Manchester United won the 2000 FA Cup final.,False
+WebQTest-1997,webqsp,test,who does owen schmitt play for?,Owen Schmitt plays for the New York Red Bulls in the MLS.,['Seattle Seahawks'],Tiered-Forest,Owen Schmitt plays for the New York Red Bulls in the MLS.,False
+WebQTest-1848,webqsp,test,what instrument does louis armstrong?,Louis Armstrong’s primary instrument was the **trumpet**. He was also famous for his distinctive **vocals**.,"['Cornet', 'Trumpet']",Tiered-Forest,Louis Armstrong’s primary instrument was the **trumpet**. He was also famous for his distinctive **vocals**.,True
+WebQTest-482,webqsp,test,who plays blaine in batman?,"The candidate answer does not match the question. The actors listed (Tim Burton, Jack Nicholson, Kim Basinger) are the director and cast of *Batman* (1989), but none played Blaine.
+
+In *Batman* (1989), the character **Blaine** is a minor thug. He is played by actor **John Dair**.
+
+**Final answer:** John Dair","['Matthew Wagner', 'Danny Trejo', 'Carlos Alazraqui', 'Tom Hardy']",Tiered-Forest,"The candidate answer does not match the question. The actors listed (Tim Burton, Jack Nicholson, Kim Basinger) are the director and cast of *Batman* (1989), but none played Blaine.
+
+In *Batman* (1989), the character **Blaine** is a minor thug. He is played by actor **John Dair**.
+
+**Final answer:** John Dair",False
+WebQTest-1780,webqsp,test,who does michael oher play for in 2010?,"In 2010, Michael Oher played for the Tennessee Titans.",['Baltimore Ravens'],Tiered-Forest,"In 2010, Michael Oher played for the Tennessee Titans.",False
+WebQTest-504,webqsp,test,who was philip in acts chapter 8?,"Philip in Acts chapter 8 was an early Christian evangelist who preached the gospel and baptized new believers, notably converting the Ethiopian eunuch.",['Apostle Philip'],Tiered-Forest,"Philip in Acts chapter 8 was an early Christian evangelist who preached the gospel and baptized new believers, notably converting the Ethiopian eunuch.",False
+WebQTest-410,webqsp,test,what are the major cities in ukraine?,"The major cities in Ukraine, by population, are:
+
+1. **Kyiv** (Kyiv) – The capital and largest city.
+2. **Kharkiv** – Major industrial and cultural center in the east.
+3. **Odesa** – Key seaport on the Black Sea.
+4. **Dnipro** – Important industrial hub on the Dnieper River.
+5. **Donetsk** – Currently occupied and part of the war zone, but historically a major city.
+6. **Zaporizhzhia** – Known for industry and the Dnieper Hydroelectric Station.
+7. **Lviv** – Major cultural center in western Ukraine.
+8. **Kryvyi Rih** – Significant industrial city, especially for mining and metallurgy.
+9. **Mykolaiv** – Important shipbuilding center and river port.
+10. **Mariupol** – Formerly a major port on the Sea of Azov, now heavily",['Kiev'],Tiered-Forest,"The major cities in Ukraine, by population, are:
+
+1. **Kyiv** (Kyiv) – The capital and largest city.
+2. **Kharkiv** – Major industrial and cultural center in the east.
+3. **Odesa** – Key seaport on the Black Sea.
+4. **Dnipro** – Important industrial hub on the Dnieper River.
+5. **Donetsk** – Currently occupied and part of the war zone, but historically a major city.
+6. **Zaporizhzhia** – Known for industry and the Dnieper Hydroelectric Station.
+7. **Lviv** – Major cultural center in western Ukraine.
+8. **Kryvyi Rih** – Significant industrial city, especially for mining and metallurgy.
+9. **Mykolaiv** – Important shipbuilding center and river port.
+10. **Mariupol** – Formerly a major port on the Sea of Azov, now heavily",False
+WebQTest-2005,webqsp,test,who plays bob kelso in scrubs?,Ken Jenkins plays Dr. Bob Kelso in *Scrubs*.,['Ken Jenkins'],Tiered-Forest,Ken Jenkins plays Dr. Bob Kelso in *Scrubs*.,True
+WebQTest-1894,webqsp,test,what baseball team was jackie robinson on?,Jackie Robinson played for the Brooklyn Dodgers.,"['Kansas City Monarchs', 'Montreal Royals', 'Brooklyn Dodgers']",Tiered-Forest,Jackie Robinson played for the Brooklyn Dodgers.,True
+WebQTest-1303,webqsp,test,what other movies is josh hutcherson in?,"Josh Hutcherson is also in:
+
+* **Bridge to Terabithia** (2007)  
+* **The Kids Are All Right** (2010)  
+* **The Disaster Artist** (2017)  
+* **Five Nights at Freddy's** (2023)","['In Dubious Battle', 'The Long Home', 'Bridge to Terabithia', ""Cirque du Freak: The Vampire's Assistant"", 'Firehouse Dog', 'Winged Creatures', 'Party Wagon', 'Journey to the Center of the Earth', 'One Last Ride', 'Wilder Days', 'Miracle Dogs', 'Kicking & Screaming', 'Red Dawn', 'Motocross Kids', 'Zathura', 'The Kids Are All Right', 'The Forger', 'The Polar Express', 'RV', 'Little Manhattan', 'Journey 2: The Mysterious Island', 'American Splendor', 'Detention', 'House Blend', 'The Hunger Games', '7 Days in Havana', 'The Third Rule', 'Epic', 'The Hunger Games: Catching Fire', 'The Hunger Games: Mockingjay, Part 1', 'The Hunger Games: Mockingjay, Part 2', 'Escobar: Paradise Lost']",Tiered-Forest,"Josh Hutcherson is also in:
+
+* **Bridge to Terabithia** (2007)  
+* **The Kids Are All Right** (2010)  
+* **The Disaster Artist** (2017)  
+* **Five Nights at Freddy's** (2023)",True
+WebQTest-1017,webqsp,test,who plays charlie in the santa clause movies?,"In *The Santa Clause* movies, the character Charlie Calvin is played by **Eric Lloyd** as a child throughout the main trilogy. The actors you listed (John Pasquin, Mary Gross, Tabitha Lupien) are not correct for this role—John Pasquin directed the first film, while Mary Gross and Tabitha Lupien played other characters.
+
+**Concise answer:** Eric Lloyd.",['Eric Lloyd'],Tiered-Forest,"In *The Santa Clause* movies, the character Charlie Calvin is played by **Eric Lloyd** as a child throughout the main trilogy. The actors you listed (John Pasquin, Mary Gross, Tabitha Lupien) are not correct for this role—John Pasquin directed the first film, while Mary Gross and Tabitha Lupien played other characters.
+
+**Concise answer:** Eric Lloyd.",True
+WebQTest-1526,webqsp,test,how many languages do they speak in switzerland?,"Switzerland has **four national languages**: German, French, Italian, and Romansh.  
+
+While Romansh is a national language, it is not an official language at the federal level for all purposes; the three main official federal languages are German, French, and Italian.  
+
+**Answer: 4 national languages (German, French, Italian, Romansh), with 3 used as primary federal administrative languages.**","['Italian Language', 'German Language', 'French', 'Romansh language']",Tiered-Forest,"Switzerland has **four national languages**: German, French, Italian, and Romansh.  
+
+While Romansh is a national language, it is not an official language at the federal level for all purposes; the three main official federal languages are German, French, and Italian.  
+
+**Answer: 4 national languages (German, French, Italian, Romansh), with 3 used as primary federal administrative languages.**",True
+WebQTest-634,webqsp,test,what county is san antonio in?,"San Antonio is in Bexar County, Texas.","['Comal County', 'Medina County', 'Bexar County']",Tiered-Forest,"San Antonio is in Bexar County, Texas.",True
+WebQTest-698,webqsp,test,who is robin roberts father?,"Robin Roberts' father is Lawrence E. Roberts, a former Tuskegee Airman and colonel in the U.S. Air Force.",['Lawrence E. Roberts'],Tiered-Forest,"Robin Roberts' father is Lawrence E. Roberts, a former Tuskegee Airman and colonel in the U.S. Air Force.",True
+WebQTest-1708,webqsp,test,what are dallas cowboys colors?,The Dallas Cowboys' colors are silver and navy blue.,"['Blue', 'Navy Blue', 'Silver', 'Royal blue', 'White']",Tiered-Forest,The Dallas Cowboys' colors are silver and navy blue.,True
+WebQTest-1990,webqsp,test,who plays timon's voice in the lion king?,"The candidate answer is incorrect. Roger Allers and Rob Minkoff are the directors of *The Lion King*, and it is an animated musical, not a drama film.
+
+The voice of Timon in *The Lion King* is played by **Nathan Lane**.",['Nathan Lane'],Tiered-Forest,"The candidate answer is incorrect. Roger Allers and Rob Minkoff are the directors of *The Lion King*, and it is an animated musical, not a drama film.
+
+The voice of Timon in *The Lion King* is played by **Nathan Lane**.",True
+WebQTest-163,webqsp,test,what year did the seahawks win the superbowl?,The Seattle Seahawks won Super Bowl XLIX in 2015.,['Super Bowl XLVIII'],Tiered-Forest,The Seattle Seahawks won Super Bowl XLIX in 2015.,False
+WebQTest-1566,webqsp,test,what kind of guitar john mayer?,"John Mayer primarily plays blues, rock, and pop music. His style is rooted in blues and rock, often incorporating elements of pop and soul.",['Fender Stratocaster'],Tiered-Forest,"John Mayer primarily plays blues, rock, and pop music. His style is rooted in blues and rock, often incorporating elements of pop and soul.",False
+WebQTest-1614,webqsp,test,what religion was king louis xiv?,King Louis XIV was a Roman Catholic.,['Catholicism'],Tiered-Forest,King Louis XIV was a Roman Catholic.,False
+WebQTest-1533,webqsp,test,what planet did luke skywalker came from?,Luke Skywalker is from the planet **Tatooine**.,['Polis Massa'],Tiered-Forest,Luke Skywalker is from the planet **Tatooine**.,False
+WebQTest-1470,webqsp,test,what kind of government does poland have?,Poland has a parliamentary representative democratic republic form of government.,"['Democracy', 'Parliamentary republic']",Tiered-Forest,Poland has a parliamentary representative democratic republic form of government.,False
+WebQTest-1557,webqsp,test,where do florida panthers play?,"The Florida Panthers play at the BB&T Center, now known as the FLA Arena, in Sunrise, Florida.","['BB&T Center', 'Miami Arena']",Tiered-Forest,"The Florida Panthers play at the BB&T Center, now known as the FLA Arena, in Sunrise, Florida.",True
+WebQTest-1917,webqsp,test,what did charles babbage discover?,"Charles Babbage did not make a single ""discovery"" in the traditional scientific sense. Instead, he is famous for his **inventions and conceptual designs**, most notably:
+
+1. **The Difference Engine** – A mechanical calculator designed to compute polynomial functions and produce error-free mathematical tables.
+2. **The Analytical Engine** – A more advanced general-purpose mechanical computer, which incorporated concepts like an arithmetic logic unit, control flow, and memory, making it a precursor to the modern programmable computer.
+
+The works you listed are his writings on science policy, the state of science in England, and industrial manufacturing, but his lasting legacy is as a **pioneer of computing**.
+
+**Concise answer:** Charles Babbage is credited with inventing the first mechanical computers: the **Difference Engine** and the more advanced, programmable **Analytical Engine**.","['Difference engine', 'Analytical Engine']",Tiered-Forest,"Charles Babbage did not make a single ""discovery"" in the traditional scientific sense. Instead, he is famous for his **inventions and conceptual designs**, most notably:
+
+1. **The Difference Engine** – A mechanical calculator designed to compute polynomial functions and produce error-free mathematical tables.
+2. **The Analytical Engine** – A more advanced general-purpose mechanical computer, which incorporated concepts like an arithmetic logic unit, control flow, and memory, making it a precursor to the modern programmable computer.
+
+The works you listed are his writings on science policy, the state of science in England, and industrial manufacturing, but his lasting legacy is as a **pioneer of computing**.
+
+**Concise answer:** Charles Babbage is credited with inventing the first mechanical computers: the **Difference Engine** and the more advanced, programmable **Analytical Engine**.",True
+WebQTest-512,webqsp,test,who were mary shelley?,"Mary Shelley was an English novelist best known for writing **""Frankenstein""** (1818). She also wrote other works, including Gothic novels, travel books, and speculative fiction, making her a foundational figure in science fiction.","['Editor', 'Biographer', 'Playwright', 'Travel writer', 'Novelist', 'Writer', 'Essayist', 'Author']",Tiered-Forest,"Mary Shelley was an English novelist best known for writing **""Frankenstein""** (1818). She also wrote other works, including Gothic novels, travel books, and speculative fiction, making her a foundational figure in science fiction.",True
+WebQTest-1047,webqsp,test,who does amy stiller play in dodgeball?,"Amy Stiller plays the character **""The Banker""** in *DodgeBall: A True Underdog Story*.",['Keno Waitress'],Tiered-Forest,"Amy Stiller plays the character **""The Banker""** in *DodgeBall: A True Underdog Story*.",False
+WebQTest-1685,webqsp,test,where did benjamin franklin went to school?,"Benjamin Franklin did not attend college. His formal schooling ended around age 10 at the Boston Latin School. After that, he was largely self-educated through reading and apprenticeship.",['Boston Latin School'],Tiered-Forest,"Benjamin Franklin did not attend college. His formal schooling ended around age 10 at the Boston Latin School. After that, he was largely self-educated through reading and apprenticeship.",True
+WebQTest-218,webqsp,test,in which continent is germany?,Germany is located in the continent of **Europe**.,['Europe'],Tiered-Forest,Germany is located in the continent of **Europe**.,True
+WebQTest-938,webqsp,test,who was queen elizabeth ii mom?,"Queen Elizabeth II's mother was **Queen Elizabeth The Queen Mother**, born Elizabeth Bowes-Lyon.",['Queen Elizabeth The Queen Mother'],Tiered-Forest,"Queen Elizabeth II's mother was **Queen Elizabeth The Queen Mother**, born Elizabeth Bowes-Lyon.",True
+WebQTest-1570,webqsp,test,where is the arizona cardinals stadium located?,"The Arizona Cardinals stadium is located in Glendale, Arizona.",['Arizona'],Tiered-Forest,"The Arizona Cardinals stadium is located in Glendale, Arizona.",True
+WebQTest-935,webqsp,test,where was osama bin laden killed?,"Osama bin Laden was killed in Abbottabad, Pakistan.",['Abbottabad'],Tiered-Forest,"Osama bin Laden was killed in Abbottabad, Pakistan.",True
+WebQTest-454,webqsp,test,where did hank marvin come from?,"Hank Marvin, the lead guitarist of The Shadows, is from Newcastle upon Tyne, England.",['Newcastle upon Tyne'],Tiered-Forest,"Hank Marvin, the lead guitarist of The Shadows, is from Newcastle upon Tyne, England.",True
+WebQTest-1807,webqsp,test,what was wayne gretzky's first team?,"Wayne Gretzky's first professional team was the **Indianapolis Racers** of the World Hockey Association (WHA). However, his first NHL team was the **Edmonton Oilers**, which joined the NHL after the WHA merger.
+
+**Concise answer:** Edmonton Oilers.",['Edmonton Oilers'],Tiered-Forest,"Wayne Gretzky's first professional team was the **Indianapolis Racers** of the World Hockey Association (WHA). However, his first NHL team was the **Edmonton Oilers**, which joined the NHL after the WHA merger.
+
+**Concise answer:** Edmonton Oilers.",True
+WebQTest-1960,webqsp,test,when was the last time the toronto maple leafs win the stanley cup?,The Toronto Maple Leafs last won the Stanley Cup in 1967.,['1967 Stanley Cup Finals'],Tiered-Forest,The Toronto Maple Leafs last won the Stanley Cup in 1967.,False
+WebQTest-757,webqsp,test,who is angelina jolie mom and dad?,"Angelina Jolie's mother is actress Marcheline Bertrand, and her father is actor Jon Voight.","['Marcheline Bertrand', 'Jon Voight']",Tiered-Forest,"Angelina Jolie's mother is actress Marcheline Bertrand, and her father is actor Jon Voight.",True
+WebQTest-721,webqsp,test,what kind of leukemia did jill clayburgh have?,Jill Clayburgh died from chronic lymphocytic leukemia (CLL).,"['B-cell chronic lymphocytic leukemia', 'Leukemia']",Tiered-Forest,Jill Clayburgh died from chronic lymphocytic leukemia (CLL).,True
+WebQTest-123,webqsp,test,what all does google now do?,"Based on the candidate answer and general knowledge, Google has discontinued or transitioned several products mentioned:
+
+*   **Google Patents** still exists as a search engine for patents.
+*   **Chromium Embedded Framework (CEF)** is an open-source project used by many companies (like Spotify, Discord) to embed a browser, but it is not a direct consumer product ""Google does.""
+*   **Google Fusion Tables** was a data visualization tool that was **discontinued in 2019**.
+
+Therefore, a concise answer is: Google currently maintains **Google Patents**, continues the open-source **Chromium Embedded Framework** project, and has **discontinued Google Fusion Tables**.","['Google Classroom', 'Google Drive', 'Apache Wave', 'Google Earth', 'Google Buzz', 'Google Docs, Sheets, and Slides', 'Nexus S', 'Google Glass', 'Nexus 7', 'Nexus Q', 'Nexus 10', 'Google Maps', 'Chromecast']",Tiered-Forest,"Based on the candidate answer and general knowledge, Google has discontinued or transitioned several products mentioned:
+
+*   **Google Patents** still exists as a search engine for patents.
+*   **Chromium Embedded Framework (CEF)** is an open-source project used by many companies (like Spotify, Discord) to embed a browser, but it is not a direct consumer product ""Google does.""
+*   **Google Fusion Tables** was a data visualization tool that was **discontinued in 2019**.
+
+Therefore, a concise answer is: Google currently maintains **Google Patents**, continues the open-source **Chromium Embedded Framework** project, and has **discontinued Google Fusion Tables**.",False
+WebQTest-361,webqsp,test,what to do and see in vienna austria?,"For a concise visit to Vienna, focus on its imperial history, art, and coffeehouse culture.
+
+**Must-See Sights:**
+*   **Historic Center:** St. Stephen's Cathedral, Hofburg Palace, and the Austrian National Library.
+*   **Art & Palaces:** Schönbrunn Palace, the Belvedere (home to Klimt's ""The Kiss""), and the Kunsthistorisches Museum.
+*   **Cultural Experience:** Visit a traditional coffeehouse (like Café Central) and see a performance at the Vienna State Opera or a concert hall.
+
+**To Do:**
+*   Ride the iconic Riesenrad Ferris wheel at the Prater park.
+*   Enjoy a slice of Sachertorte at the Hotel Sacher.
+*   Browse the Naschmarkt for food and antiques.
+
+A 2-3 day trip allows you to cover these highlights efficiently.","['Rock im Park', 'Schönbrunn Palace', 'Minoritenkirche', ""St. Stephen's Cathedral, Vienna"", 'Vienna State Opera', 'Liechtenstein Museum', 'Schloss Hof', 'mumok', 'Imperial Crypt', 'Belvedere, Vienna', 'Kunsthistorisches Museum', 'Karlskirche, Vienna', 'Albertina', 'Naturhistorisches Museum', 'Hofburg Palace', 'Jesuit Church, Vienna', 'Schottenkirche, Vienna', 'Museum of Military History, Vienna', 'Vienna International Centre', 'Sigmund Freud Museum', 'Vienna Observatory', 'Augustinian Church, Vienna', 'Capuchin Church, Vienna', 'Prater', 'Millennium Tower', ""St. Peter's Church"", 'Leopold Museum', 'Haus der Musik', 'Rathaus, Vienna']",Tiered-Forest,"For a concise visit to Vienna, focus on its imperial history, art, and coffeehouse culture.
+
+**Must-See Sights:**
+*   **Historic Center:** St. Stephen's Cathedral, Hofburg Palace, and the Austrian National Library.
+*   **Art & Palaces:** Schönbrunn Palace, the Belvedere (home to Klimt's ""The Kiss""), and the Kunsthistorisches Museum.
+*   **Cultural Experience:** Visit a traditional coffeehouse (like Café Central) and see a performance at the Vienna State Opera or a concert hall.
+
+**To Do:**
+*   Ride the iconic Riesenrad Ferris wheel at the Prater park.
+*   Enjoy a slice of Sachertorte at the Hotel Sacher.
+*   Browse the Naschmarkt for food and antiques.
+
+A 2-3 day trip allows you to cover these highlights efficiently.",True
+WebQTest-111,webqsp,test,where is the carpathian mountain range located?,"The Carpathian mountain range is located in Central and Eastern Europe, spanning several countries including Romania, Ukraine, Slovakia, and Poland.",['Europe'],Tiered-Forest,"The Carpathian mountain range is located in Central and Eastern Europe, spanning several countries including Romania, Ukraine, Slovakia, and Poland.",True
+WebQTest-673,webqsp,test,where did robert kardashian go to college?,"Robert Kardashian attended the University of Southern California (USC), where he earned a degree in business administration. He later attended law school at the University of San Diego School of Law.","['University of San Diego', 'University of San Diego School of Law', 'University of Southern California']",Tiered-Forest,"Robert Kardashian attended the University of Southern California (USC), where he earned a degree in business administration. He later attended law school at the University of San Diego School of Law.",True
+WebQTest-987,webqsp,test,what does barbara bush do for work?,"Barbara Bush was a former First Lady of the United States, and her primary public work involved advocacy for literacy and volunteerism. She founded the Barbara Bush Foundation for Family Literacy.",['First Lady'],Tiered-Forest,"Barbara Bush was a former First Lady of the United States, and her primary public work involved advocacy for literacy and volunteerism. She founded the Barbara Bush Foundation for Family Literacy.",True
+WebQTest-773,webqsp,test,where is the sony ericsson company?,"Sony Ericsson was headquartered in Stockholm, Sweden, until it was dissolved in 2012, after which its assets were absorbed by Sony Mobile.",['Minato'],Tiered-Forest,"Sony Ericsson was headquartered in Stockholm, Sweden, until it was dissolved in 2012, after which its assets were absorbed by Sony Mobile.",False
+WebQTest-1616,webqsp,test,what did shannon hoon die from?,"Shannon Hoon died from a cocaine overdose. 
+
+He was found dead on his tour bus on October 21, 1995, at age 28.",['Drug overdose'],Tiered-Forest,"Shannon Hoon died from a cocaine overdose. 
+
+He was found dead on his tour bus on October 21, 1995, at age 28.",False
+WebQTest-874,webqsp,test,what language do people from bosnia speak?,"People from Bosnia primarily speak **Bosnian, Serbian, and Croatian**. These are three standardized varieties of the same language (formerly known as Serbo-Croatian) and are mutually intelligible. The language someone identifies with often corresponds to their ethnic background (Bosniaks, Serbs, Croats).","['Serbo-Croatian Language', 'Serbian language', 'Bosnian language', 'Croatian language']",Tiered-Forest,"People from Bosnia primarily speak **Bosnian, Serbian, and Croatian**. These are three standardized varieties of the same language (formerly known as Serbo-Croatian) and are mutually intelligible. The language someone identifies with often corresponds to their ethnic background (Bosniaks, Serbs, Croats).",False
+WebQTest-766,webqsp,test,what is malaysian currency?,The Malaysian currency is the Ringgit (MYR).,['Malaysian ringgit'],Tiered-Forest,The Malaysian currency is the Ringgit (MYR).,False
+WebQTest-1445,webqsp,test,what tv series did mark harmon star in?,Mark Harmon starred in the TV series **NCIS**.,"['Chicago Hope', 'Centennial', 'From the Earth to the Moon', 'St. Elsewhere', 'Flamingo Road', 'NCIS', 'Eleanor and Franklin: The White House Years', 'Sam', '240-Robert', 'Charlie Grace', 'The Dream Merchants', 'Reasonable Doubts']",Tiered-Forest,Mark Harmon starred in the TV series **NCIS**.,True
+WebQTest-153,webqsp,test,what are the sights to see in madrid?,"The sights to see in Madrid include the Royal Palace, Plaza Mayor, Retiro Park, and the Prado Museum.","['El Escorial', 'Museo Nacional Del Prado', 'Museo Nacional Centro de Arte Reina Sofía', 'Summercase', 'Festimad', 'Buen Retiro Park', 'Royal Palace of Madrid', 'Almudena Cathedral', 'Sorolla Museum', 'Plaza de Cibeles', 'Madrid Arena', 'Paseo del Prado', 'Parque Warner Madrid', 'Thyssen-Bornemisza Museum', 'Temple of Debod', 'Puerta del Sol', 'Gran Vía', 'Madrid Marathon', 'Plaza Mayor, Madrid', 'La Vaguada', 'Museum of Lázaro Galdiano', 'Palace of la Bolsa de Madrid']",Tiered-Forest,"The sights to see in Madrid include the Royal Palace, Plaza Mayor, Retiro Park, and the Prado Museum.",False
+WebQTest-420,webqsp,test,where is perpignan located?,"Perpignan is located in the south of France, at the foot of the Pyrenees mountains.","['Pyrénées-Orientales', 'France', 'Languedoc-Roussillon']",Tiered-Forest,"Perpignan is located in the south of France, at the foot of the Pyrenees mountains.",True
+WebQTest-1416,webqsp,test,what was franklin pierce famous for?,"Franklin Pierce is famous for being the 14th President of the United States, particularly known for his support of the Kansas-Nebraska Act.",['US President'],Tiered-Forest,"Franklin Pierce is famous for being the 14th President of the United States, particularly known for his support of the Kansas-Nebraska Act.",False
+WebQTest-1748,webqsp,test,through which countries of the sahel does the niger river flow?,"The Niger River flows through several Sahel countries including Mali, Niger, and Chad.","['Mali', 'Niger', 'Nigeria']",Tiered-Forest,"The Niger River flows through several Sahel countries including Mali, Niger, and Chad.",True
+WebQTest-354,webqsp,test,what art movement did leonardo da vinci belong to?,"Leonardo da Vinci belonged to the **Italian Renaissance**, specifically the **High Renaissance** period.","['Pastel Art', 'High Renaissance']",Tiered-Forest,"Leonardo da Vinci belonged to the **Italian Renaissance**, specifically the **High Renaissance** period.",True
+WebQTest-1392,webqsp,test,what the language spoken in indonesia?,The official language spoken in Indonesia is Indonesian (Bahasa Indonesia).,"['Sunda Language', 'Bali Language', 'Madura Language', 'Dutch Language', 'English Language', 'Javanese Language', 'Batak Language', 'Indonesian Language', 'Tobelo Language', 'Malay Language']",Tiered-Forest,The official language spoken in Indonesia is Indonesian (Bahasa Indonesia).,False
+WebQTest-90,webqsp,test,who played on the jeffersons?,"The candidate answer is incorrect. Oz Scott, Jack Shea, and Tony Singletary were directors, not actors who played characters on the show.
+
+The actors who played the main characters on *The Jeffersons* were Sherman Hemsley (George Jefferson) and Isabel Sanford (Louise Jefferson).","['Sherman Hemsley', 'Isabel Sanford', 'Damon Evans', 'Berlinda Tolbert', 'Roxie Roker', 'Zara Cully', 'Marla Gibbs', 'Franklin Cover', 'Paul Benedict', 'Mike Evans', 'Jay Hammer']",Tiered-Forest,"The candidate answer is incorrect. Oz Scott, Jack Shea, and Tony Singletary were directors, not actors who played characters on the show.
+
+The actors who played the main characters on *The Jeffersons* were Sherman Hemsley (George Jefferson) and Isabel Sanford (Louise Jefferson).",True
+WebQTest-1916,webqsp,test,what county is utica ny in?,"Utica, NY is in Oneida County.",['Oneida County'],Tiered-Forest,"Utica, NY is in Oneida County.",True
+WebQTest-1489,webqsp,test,what character did billy d williams play in star wars?,Billy Dee Williams played the character **Lando Calrissian** in *Star Wars*.,['Lando Calrissian'],Tiered-Forest,Billy Dee Williams played the character **Lando Calrissian** in *Star Wars*.,True
+WebQTest-1955,webqsp,test,who are the judges appointed in the supreme court?,"The candidate answer does not list specific judges. It references Supreme Court cases and the general process of appointing justices.
+
+To answer your question directly: The current Supreme Court Justices (as of 2024) are:
+*   John G. Roberts, Jr. (Chief Justice)
+*   Clarence Thomas
+*   Samuel A. Alito, Jr.
+*   Sonia Sotomayor
+*   Elena Kagan
+*   Neil M. Gorsuch
+*   Brett M. Kavanaugh
+*   Amy Coney Barrett
+*   Ketanji Brown Jackson","['Clarence Thomas', 'Antonin Scalia', 'Stephen Breyer', 'Ruth Bader Ginsburg', 'Anthony Kennedy', 'Samuel Alito', 'John Roberts', 'Elena Kagan', 'Sonia Sotomayor']",Tiered-Forest,"The candidate answer does not list specific judges. It references Supreme Court cases and the general process of appointing justices.
+
+To answer your question directly: The current Supreme Court Justices (as of 2024) are:
+*   John G. Roberts, Jr. (Chief Justice)
+*   Clarence Thomas
+*   Samuel A. Alito, Jr.
+*   Sonia Sotomayor
+*   Elena Kagan
+*   Neil M. Gorsuch
+*   Brett M. Kavanaugh
+*   Amy Coney Barrett
+*   Ketanji Brown Jackson",True
+WebQTest-708,webqsp,test,who won fa cup 1976?,Manchester United won the FA Cup in 1976.,['Southampton F.C.'],Tiered-Forest,Manchester United won the FA Cup in 1976.,False

@@ -134,6 +134,11 @@ def parse_args() -> argparse.Namespace:
     # Tiered-Forest parameters
     parser.add_argument("--t_drop", type=float, default=0.3, help="tiered-forest drop threshold")
     parser.add_argument("--t_pass", type=float, default=0.6, help="tiered-forest pass threshold")
+    parser.add_argument(
+        "--enable_small_model",
+        action="store_true",
+        help="enable Tier-2 small-model candidate generation (higher speed/cost tradeoff).",
+    )
 
     return parser.parse_args()
 
@@ -204,6 +209,7 @@ def build_agents(args: argparse.Namespace, backend, cache_base_dir: str):
                     cache_manager=forest_cache,
                     t_drop=args.t_drop,
                     t_pass=args.t_pass,
+                    enable_small_model=args.enable_small_model,
                 ),
             }
         )

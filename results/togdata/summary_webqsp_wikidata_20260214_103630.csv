@@ -1,0 +1,2 @@
+agent,dataset,split,backend,samples,accuracy,right,error,total_cost_usd,avg_cost_usd,total_tokens,avg_tokens,avg_latency_s,total_time_s,calls_total,tier1_pct,tier2_pct,tier3_pct
+Tiered-Forest,webqsp,test,wikidata,50,0.68,34,16,0.0,0.0,0,0.0,0.0,359.4170653820038,50,0.0,0.0,100.0

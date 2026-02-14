@@ -1,0 +1,201 @@
+id,dataset,split,question,prediction,answers,agent,raw_prediction,correct
+WebQTest-1198,webqsp,test,who influenced samuel taylor coleridge?,"Samuel Taylor Coleridge was primarily influenced by:
+
+1. **Philosophical thinkers:** Immanuel Kant, David Hartley, and the German Idealists.
+2. **Literary figures:** William Wordsworth (his collaborator), William Shakespeare, John Milton, and the Gothic novel tradition.
+3. **German literature and philosophy:** His time in Germany led to an absorption of ideas from Friedrich Schiller and the aesthetics of German Romanticism.
+4. **Platonism and Neoplatonism:** Which shaped his views on imagination and the spiritual world.
+
+His major concept of the ""Primary and Secondary Imagination"" was particularly shaped by his engagement with German transcendental philosophy.","['Giambattista Vico', 'Baruch Spinoza', 'Thomas Browne', 'Friedrich Wilhelm Joseph Schelling', 'Emanuel Swedenborg', 'Immanuel Kant', 'John Milton', 'William Shakespeare', 'Robert Burns', 'Algernon Charles Swinburne']",Tiered-Forest,"Samuel Taylor Coleridge was primarily influenced by:
+
+1. **Philosophical thinkers:** Immanuel Kant, David Hartley, and the German Idealists.
+2. **Literary figures:** William Wordsworth (his collaborator), William Shakespeare, John Milton, and the Gothic novel tradition.
+3. **German literature and philosophy:** His time in Germany led to an absorption of ideas from Friedrich Schiller and the aesthetics of German Romanticism.
+4. **Platonism and Neoplatonism:** Which shaped his views on imagination and the spiritual world.
+
+His major concept of the ""Primary and Secondary Imagination"" was particularly shaped by his engagement with German transcendental philosophy.",True
+WebQTest-1092,webqsp,test,who did viggo mortensen play in lord of the rings?,Viggo Mortensen played **Aragorn** in *The Lord of the Rings*.,['Aragorn'],Tiered-Forest,Viggo Mortensen played **Aragorn** in *The Lord of the Rings*.,True
+WebQTest-713,webqsp,test,what county is st. louis park in?,"St. Louis Park is in **Hennepin County**, Minnesota.",['Hennepin County'],Tiered-Forest,"St. Louis Park is in **Hennepin County**, Minnesota.",True
+WebQTest-1637,webqsp,test,what are the catholic holy days?,"The candidate answer does not match the question. The names provided are not relevant to the inquiry about Catholic holy days.
+
+The universal Catholic holy days of obligation (though observance can vary by country) typically include:
+*   Solemnity of Mary, Mother of God (January 1)
+*   Ascension of Jesus (40 days after Easter)
+*   Assumption of Mary (August 15)
+*   All Saints' Day (November 1)
+*   Immaculate Conception (December 8)
+*   Christmas (December 25)
+
+**Answer:** The principal Catholic holy days include Christmas, the Solemnity of Mary, the Ascension, the Assumption, All Saints' Day, and the Immaculate Conception. Local bishops' conferences may adjust the list.","['Feast of St. Margaret of the Árpád House', 'Feast of Our Lady of Hungary', 'Feast of Our Lady of the Rosary', ""Our Lady of Aparecida's day"", 'Father Damien Day', 'Our Lady of Guadalupe Day', 'St. Spiridon Day', ""Saint Nicholas' Eve"", 'Feast of Assumption', ""Euthymius the Great's Feast Day"", 'The Feast of Our Lady of Mount Carmel', ""St. Anthony's Day"", 'Feast of Our Lady of Sorrows', ""St Joseph's Day"", ""Saint Patrick's Day"", 'Maundy Thursday', ""St. Stephen's Day"", 'Corpus Christi', 'Nativity of Mary', 'Olsok', 'Feast of the Immaculate Conception', 'Feast of the Cross', 'Feast of Christ the King', 'Name day', 'Fat Thursday', 'World Day of Peace', 'Palm Sunday', 'Saints Cyril and Methodius Day', 'Solemnity of Mary, Mother of God', 'Feast of Saints Peter and Paul', ""St Crispin's Day"", ""St Casimir's Day"", ""All Saints' Day"", 'Feast of St Francis of Assisi', 'St Nicholas Day']",Tiered-Forest,"The candidate answer does not match the question. The names provided are not relevant to the inquiry about Catholic holy days.
+
+The universal Catholic holy days of obligation (though observance can vary by country) typically include:
+*   Solemnity of Mary, Mother of God (January 1)
+*   Ascension of Jesus (40 days after Easter)
+*   Assumption of Mary (August 15)
+*   All Saints' Day (November 1)
+*   Immaculate Conception (December 8)
+*   Christmas (December 25)
+
+**Answer:** The principal Catholic holy days include Christmas, the Solemnity of Mary, the Ascension, the Assumption, All Saints' Day, and the Immaculate Conception. Local bishops' conferences may adjust the list.",True
+WebQTest-1241,webqsp,test,where does the columbia river start?,"The Columbia River starts in Columbia Lake in the Rocky Mountain Trench of British Columbia, Canada.",['Columbia Lake'],Tiered-Forest,"The Columbia River starts in Columbia Lake in the Rocky Mountain Trench of British Columbia, Canada.",True
+WebQTest-377,webqsp,test,what school did michael jordan attend?,Michael Jordan attended the University of North Carolina at Chapel Hill.,"['Emsley A. Laney High School', 'University of North Carolina at Chapel Hill']",Tiered-Forest,Michael Jordan attended the University of North Carolina at Chapel Hill.,True
+WebQTest-1488,webqsp,test,what type of art does marc chagall do?,"Marc Chagall was a painter and stained glass artist, best known for his work in **modern art**, particularly **painting**. He worked in styles like **Symbolism, Cubism, and Fauvism**, and is famous for his dreamlike, poetic scenes often inspired by Jewish folklore and his native Belarus.","['Modern art', 'Fauvism', 'Surrealism', 'Cubism', 'Expressionism']",Tiered-Forest,"Marc Chagall was a painter and stained glass artist, best known for his work in **modern art**, particularly **painting**. He worked in styles like **Symbolism, Cubism, and Fauvism**, and is famous for his dreamlike, poetic scenes often inspired by Jewish folklore and his native Belarus.",True
+WebQTest-383,webqsp,test,what language do chinese people write in?,"Chinese people primarily write in **Standard Chinese**, which uses **Chinese characters (汉字)**. The modern writing system is based on **simplified characters** in mainland China and **traditional characters** in regions like Taiwan, Hong Kong, and Macau.","['Nüshu script', 'Simplified Chinese character', 'Traditional Chinese characters', ""'Phags-pa script"", 'Chinese characters']",Tiered-Forest,"Chinese people primarily write in **Standard Chinese**, which uses **Chinese characters (汉字)**. The modern writing system is based on **simplified characters** in mainland China and **traditional characters** in regions like Taiwan, Hong Kong, and Macau.",True
+WebQTest-1619,webqsp,test,where do the appalachian mountains run?,"The Appalachian Mountains run through the eastern United States, extending from Newfoundland and Labrador in Canada down to central Alabama in the United States.",['North America'],Tiered-Forest,"The Appalachian Mountains run through the eastern United States, extending from Newfoundland and Labrador in Canada down to central Alabama in the United States.",False
+WebQTest-1508,webqsp,test,when did bill clinton go to college?,"Bill Clinton attended Georgetown University from 1964 to 1968, where he earned a Bachelor of Science in Foreign Service. He then attended Oxford University as a Rhodes Scholar from 1968 to 1970, followed by Yale Law School from 1970 to 1973.","['Yale Law School', 'Edmund A. Walsh School of Foreign Service', 'University of Oxford', 'University Yale', 'Georgetown University', 'University College, Oxford']",Tiered-Forest,"Bill Clinton attended Georgetown University from 1964 to 1968, where he earned a Bachelor of Science in Foreign Service. He then attended Oxford University as a Rhodes Scholar from 1968 to 1970, followed by Yale Law School from 1970 to 1973.",True
+WebQTest-266,webqsp,test,what is there to do for fun in kansas city?,"The candidate answer does not match the question. The names provided are unrelated to activities in Kansas City.
+
+For fun in Kansas City, you can:
+*   Explore the **Country Club Plaza** for shopping and dining.
+*   Visit world-class museums like the **Nelson-Atkins Museum of Art** or the **National WWI Museum**.
+*   Experience the **Kansas City jazz and blues scene** in districts like the 18th & Vine Historic Jazz District.
+*   Enjoy Kansas City's famous **barbecue** at renowned restaurants.
+*   Attend professional sports games (Chiefs for NFL, Royals for MLB, or Sporting KC for MLS).","['Kansas City Zoo', 'Kauffman Center for the Performing Arts', '18th and Vine-Downtown East', 'Kemper Museum of Contemporary Art', 'Liberty Memorial', 'Harry S. Truman Presidential Library and Museum', 'Crown Center', 'Worlds of Fun', 'Sprint Center', 'Negro Leagues Baseball Museum', 'Boulevard Brewing Company', 'Oceans of Fun', 'Hotel Phillips', 'Deer Creek Golf Course', 'Ewing and Muriel Kauffman Memorial Garden']",Tiered-Forest,"The candidate answer does not match the question. The names provided are unrelated to activities in Kansas City.
+
+For fun in Kansas City, you can:
+*   Explore the **Country Club Plaza** for shopping and dining.
+*   Visit world-class museums like the **Nelson-Atkins Museum of Art** or the **National WWI Museum**.
+*   Experience the **Kansas City jazz and blues scene** in districts like the 18th & Vine Historic Jazz District.
+*   Enjoy Kansas City's famous **barbecue** at renowned restaurants.
+*   Attend professional sports games (Chiefs for NFL, Royals for MLB, or Sporting KC for MLS).",False
+WebQTest-191,webqsp,test,where did drew brees go to college wikianswers?,Drew Brees attended Purdue University.,"['Stanford Graduate School of Business', 'Purdue University']",Tiered-Forest,Drew Brees attended Purdue University.,True
+WebQTest-554,webqsp,test,what money do they use in spain?,They use the **Euro (€)** in Spain.,['Euro'],Tiered-Forest,They use the **Euro (€)** in Spain.,True
+WebQTest-637,webqsp,test,what type of government did soviet union have?,"The Soviet Union had a **single-party communist government**, specifically under the **Communist Party of the Soviet Union (CPSU)**. It was a centralized, authoritarian state based on the ideology of Marxism-Leninism.","['Communist state', 'Socialist state', 'Soviet democracy', 'Parliamentary republic']",Tiered-Forest,"The Soviet Union had a **single-party communist government**, specifically under the **Communist Party of the Soviet Union (CPSU)**. It was a centralized, authoritarian state based on the ideology of Marxism-Leninism.",False
+WebQTest-875,webqsp,test,where did hugo chavez go to school?,"Hugo Chávez attended the Military Academy of Venezuela (Academia Militar de Venezuela), graduating in 1975. He also later studied at Simón Bolívar University (Universidad Simón Bolívar) for a master's degree in political science in the 1990s.","['Julian Pino School', ""Daniel Florencio O'Leary School"", 'Simón Bolívar University', 'Bolivarian Military University of Venezuela']",Tiered-Forest,"Hugo Chávez attended the Military Academy of Venezuela (Academia Militar de Venezuela), graduating in 1975. He also later studied at Simón Bolívar University (Universidad Simón Bolívar) for a master's degree in political science in the 1990s.",True
+WebQTest-438,webqsp,test,what university did romney graduated from?,"The candidate answer provided (""larry cohen, larry cohen, david carradine"") is unrelated to the question about Mitt Romney's education.  
+
+Mitt Romney graduated from **Brigham Young University** (undergraduate) and later earned joint degrees from **Harvard University** (JD and MBA).  
+
+**Concise answer:** Brigham Young University and Harvard University.",['Brigham Young University'],Tiered-Forest,"The candidate answer provided (""larry cohen, larry cohen, david carradine"") is unrelated to the question about Mitt Romney's education.  
+
+Mitt Romney graduated from **Brigham Young University** (undergraduate) and later earned joint degrees from **Harvard University** (JD and MBA).  
+
+**Concise answer:** Brigham Young University and Harvard University.",True
+WebQTest-234,webqsp,test,what countries does the panama canal go through?,The Panama Canal is located entirely within one country: **Panama**.,['Panama'],Tiered-Forest,The Panama Canal is located entirely within one country: **Panama**.,True
+WebQTest-461,webqsp,test,where did clay matthews go to school?,Clay Matthews went to the University of Southern California (USC).,"['University of Southern California', 'Agoura High School']",Tiered-Forest,Clay Matthews went to the University of Southern California (USC).,True
+WebQTest-1441,webqsp,test,where all did picasso live?,"Based on the context clues, Picasso lived in multiple locations, but the provided candidate answer suggests: **A Tale of Two Cities** (likely referring to his time split between Barcelona and Paris), **Underground** (likely a misinterpretation or reference to his Bohemian periods), and **Manhattan** (which is incorrect for Picasso's residences).
+
+Concise answer: **Barcelona and Paris.**","['Málaga', 'Madrid', 'France']",Tiered-Forest,"Based on the context clues, Picasso lived in multiple locations, but the provided candidate answer suggests: **A Tale of Two Cities** (likely referring to his time split between Barcelona and Paris), **Underground** (likely a misinterpretation or reference to his Bohemian periods), and **Manhattan** (which is incorrect for Picasso's residences).
+
+Concise answer: **Barcelona and Paris.**",False
+WebQTest-1622,webqsp,test,what ocean is around hawaii?,"The candidate answer is irrelevant to the question. The question asks for the ocean surrounding Hawaii.
+
+Hawaii is located in the central Pacific Ocean.
+
+**Answer: The Pacific Ocean.**",['Pacific Ocean'],Tiered-Forest,"The candidate answer is irrelevant to the question. The question asks for the ocean surrounding Hawaii.
+
+Hawaii is located in the central Pacific Ocean.
+
+**Answer: The Pacific Ocean.**",True
+WebQTest-1757,webqsp,test,what did michael crabtree do?,"Michael Crabtree is a former American football wide receiver who played in the NFL for teams including the San Francisco 49ers, Oakland Raiders, and Arizona Cardinals. He was a two-time Biletnikoff Award winner in college at Texas Tech and was a first-round pick in the 2009 NFL Draft.
+
+(The provided list of movies appears unrelated to Michael Crabtree.)","['Wide receiver', 'Athlete', 'American football player']",Tiered-Forest,"Michael Crabtree is a former American football wide receiver who played in the NFL for teams including the San Francisco 49ers, Oakland Raiders, and Arizona Cardinals. He was a two-time Biletnikoff Award winner in college at Texas Tech and was a first-round pick in the 2009 NFL Draft.
+
+(The provided list of movies appears unrelated to Michael Crabtree.)",True
+WebQTest-1328,webqsp,test,what did hayes do?,"Based on the context provided, the candidate answer suggests the question relates to the TV series ""Manhattan"" and the character ""Hayes.""
+
+In the show ""Manhattan,"" Dr. Reed Hayes is a psychiatrist. His primary role is to **evaluate the mental and emotional stability of the scientists at Los Alamos** to ensure they are fit to work on the atomic bomb project. He conducts psychological assessments and becomes involved in the personal and professional conflicts of the main characters.",['US President'],Tiered-Forest,"Based on the context provided, the candidate answer suggests the question relates to the TV series ""Manhattan"" and the character ""Hayes.""
+
+In the show ""Manhattan,"" Dr. Reed Hayes is a psychiatrist. His primary role is to **evaluate the mental and emotional stability of the scientists at Los Alamos** to ensure they are fit to work on the atomic bomb project. He conducts psychological assessments and becomes involved in the personal and professional conflicts of the main characters.",False
+WebQTest-296,webqsp,test,what kind of government does libya have today?,"Based on the context provided, the candidate answer is irrelevant to the question about Libya's current government.
+
+After the fall of Muammar Gaddafi in 2011, Libya has not established a unified, stable central government. The country remains divided between two rival administrations:
+
+1.  The **internationally recognized Government of National Unity (GNU)**, based in Tripoli and led by Prime Minister Abdul Hamid Dbeibah.
+2.  The **Government of National Stability (GNS)**, based in the east and backed by the Libyan National Army (LNA) commanded by Khalifa Haftar.
+
+Therefore, Libya today is effectively a **divided state with competing governments** and significant influence from armed militias and foreign powers.","['Provisional government', 'Parliamentary republic']",Tiered-Forest,"Based on the context provided, the candidate answer is irrelevant to the question about Libya's current government.
+
+After the fall of Muammar Gaddafi in 2011, Libya has not established a unified, stable central government. The country remains divided between two rival administrations:
+
+1.  The **internationally recognized Government of National Unity (GNU)**, based in Tripoli and led by Prime Minister Abdul Hamid Dbeibah.
+2.  The **Government of National Stability (GNS)**, based in the east and backed by the Libyan National Army (LNA) commanded by Khalifa Haftar.
+
+Therefore, Libya today is effectively a **divided state with competing governments** and significant influence from armed militias and foreign powers.",False
+WebQTest-527,webqsp,test,what country borders slovakia?,"Slovakia borders five countries:  
+- Austria (to the southwest)  
+- Czech Republic (to the northwest)  
+- Poland (to the north)  
+- Ukraine (to the east)  
+- Hungary (to the south)","['Czech Republic', 'Hungary', 'Poland', 'Ukraine', 'Austria']",Tiered-Forest,"Slovakia borders five countries:  
+- Austria (to the southwest)  
+- Czech Republic (to the northwest)  
+- Poland (to the north)  
+- Ukraine (to the east)  
+- Hungary (to the south)",True
+WebQTest-2001,webqsp,test,who won the 2000 fa cup final?,"The 2000 FA Cup final was won by **Chelsea**, who beat Aston Villa 1–0.  
+
+The names provided (Paul Crowder, Michael Fassbender) are not relevant to the answer.  
+
+**Answer:** Chelsea",['Chelsea F.C.'],Tiered-Forest,"The 2000 FA Cup final was won by **Chelsea**, who beat Aston Villa 1–0.  
+
+The names provided (Paul Crowder, Michael Fassbender) are not relevant to the answer.  
+
+**Answer:** Chelsea",False
+WebQTest-1997,webqsp,test,who does owen schmitt play for?,"Owen Schmitt is a former NFL fullback who played for the Seattle Seahawks (2008–2010) and the Philadelphia Eagles (2011). The context provided (""a tale of two cities, underground, manhattan"") does not appear to be relevant to his career.",['Seattle Seahawks'],Tiered-Forest,"Owen Schmitt is a former NFL fullback who played for the Seattle Seahawks (2008–2010) and the Philadelphia Eagles (2011). The context provided (""a tale of two cities, underground, manhattan"") does not appear to be relevant to his career.",True
+WebQTest-1848,webqsp,test,what instrument does louis armstrong?,"Louis Armstrong's primary instrument was the trumpet. He was also famous for his distinctive singing voice.
+
+**Answer:** Trumpet","['Cornet', 'Trumpet']",Tiered-Forest,"Louis Armstrong's primary instrument was the trumpet. He was also famous for his distinctive singing voice.
+
+**Answer:** Trumpet",True
+WebQTest-482,webqsp,test,who plays blaine in batman?,"Blaine is not a character in any Batman film. The candidate answer appears to be a list of unrelated movie titles and is not relevant to the question.
+
+The correct answer is that there is no character named Blaine in the core Batman movie canon.","['Matthew Wagner', 'Danny Trejo', 'Carlos Alazraqui', 'Tom Hardy']",Tiered-Forest,"Blaine is not a character in any Batman film. The candidate answer appears to be a list of unrelated movie titles and is not relevant to the question.
+
+The correct answer is that there is no character named Blaine in the core Batman movie canon.",False
+WebQTest-1780,webqsp,test,who does michael oher play for in 2010?,Michael Oher played for the Baltimore Ravens in 2010.,['Baltimore Ravens'],Tiered-Forest,Michael Oher played for the Baltimore Ravens in 2010.,True
+WebQTest-504,webqsp,test,who was philip in acts chapter 8?,"In Acts chapter 8, Philip is one of the seven chosen to serve the early church (Acts 6:5). He is a **deacon and evangelist** who, after persecution scatters the believers, preaches in Samaria and performs miracles. Later, an angel directs him to the desert road to Gaza, where he meets and baptizes an Ethiopian eunuch, explaining the prophecy of Isaiah to him (Acts 8:26-40).",['Apostle Philip'],Tiered-Forest,"In Acts chapter 8, Philip is one of the seven chosen to serve the early church (Acts 6:5). He is a **deacon and evangelist** who, after persecution scatters the believers, preaches in Samaria and performs miracles. Later, an angel directs him to the desert road to Gaza, where he meets and baptizes an Ethiopian eunuch, explaining the prophecy of Isaiah to him (Acts 8:26-40).",False
+WebQTest-410,webqsp,test,what are the major cities in ukraine?,"The candidate answer provided (""catch me if you can, ghost in the shell, oldboy"") is unrelated to the question about Ukraine's major cities.
+
+The major cities in Ukraine are:
+
+1. **Kyiv** (also spelled Kiev) – The capital and largest city.
+2. **Kharkiv** – A major industrial and educational center in the east.
+3. **Odesa** – A key seaport on the Black Sea.
+4. **Dnipro** – An important industrial city on the Dnieper River.
+5. **Donetsk** – Currently occupied and administered by Russia; a major city in the Donbas region.
+6. **Lviv** – A historical and cultural center in western Ukraine.
+7. **Zaporizhzhia** – Known for its industry and the nearby nuclear power plant.
+8. **Kryvyi Rih** – A major iron ore mining and industrial city.
+
+**Note:** Cities like Donetsk and Sev",['Kiev'],Tiered-Forest,"The candidate answer provided (""catch me if you can, ghost in the shell, oldboy"") is unrelated to the question about Ukraine's major cities.
+
+The major cities in Ukraine are:
+
+1. **Kyiv** (also spelled Kiev) – The capital and largest city.
+2. **Kharkiv** – A major industrial and educational center in the east.
+3. **Odesa** – A key seaport on the Black Sea.
+4. **Dnipro** – An important industrial city on the Dnieper River.
+5. **Donetsk** – Currently occupied and administered by Russia; a major city in the Donbas region.
+6. **Lviv** – A historical and cultural center in western Ukraine.
+7. **Zaporizhzhia** – Known for its industry and the nearby nuclear power plant.
+8. **Kryvyi Rih** – A major iron ore mining and industrial city.
+
+**Note:** Cities like Donetsk and Sev",True
+WebQTest-2005,webqsp,test,who plays bob kelso in scrubs?,The actor who plays Bob Kelso in *Scrubs* is **Ken Jenkins**.,['Ken Jenkins'],Tiered-Forest,The actor who plays Bob Kelso in *Scrubs* is **Ken Jenkins**.,True
+WebQTest-1894,webqsp,test,what baseball team was jackie robinson on?,Jackie Robinson played for the Brooklyn Dodgers.,"['Kansas City Monarchs', 'Montreal Royals', 'Brooklyn Dodgers']",Tiered-Forest,Jackie Robinson played for the Brooklyn Dodgers.,True
+WebQTest-1303,webqsp,test,what other movies is josh hutcherson in?,"Josh Hutcherson is not in *Catch Me If You Can*, *Ghost in the Shell*, or *Oldboy*. Those movies feature other actors.
+
+Josh Hutcherson is known for movies like:
+* **The Hunger Games** series
+* **Bridge to Terabithia**
+* **The Kids Are All Right**
+* **Journey to the Center of the Earth** (2008)
+* **Five Nights at Freddy's**","['In Dubious Battle', 'The Long Home', 'Bridge to Terabithia', ""Cirque du Freak: The Vampire's Assistant"", 'Firehouse Dog', 'Winged Creatures', 'Party Wagon', 'Journey to the Center of the Earth', 'One Last Ride', 'Wilder Days', 'Miracle Dogs', 'Kicking & Screaming', 'Red Dawn', 'Motocross Kids', 'Zathura', 'The Kids Are All Right', 'The Forger', 'The Polar Express', 'RV', 'Little Manhattan', 'Journey 2: The Mysterious Island', 'American Splendor', 'Detention', 'House Blend', 'The Hunger Games', '7 Days in Havana', 'The Third Rule', 'Epic', 'The Hunger Games: Catching Fire', 'The Hunger Games: Mockingjay, Part 1', 'The Hunger Games: Mockingjay, Part 2', 'Escobar: Paradise Lost']",Tiered-Forest,"Josh Hutcherson is not in *Catch Me If You Can*, *Ghost in the Shell*, or *Oldboy*. Those movies feature other actors.
+
+Josh Hutcherson is known for movies like:
+* **The Hunger Games** series
+* **Bridge to Terabithia**
+* **The Kids Are All Right**
+* **Journey to the Center of the Earth** (2008)
+* **Five Nights at Freddy's**",True
+WebQTest-1017,webqsp,test,who plays charlie in the santa clause movies?,"The actor who plays Charlie Calvin in *The Santa Clause* movies is **Eric Lloyd** as a child, and **Tim Allen** as his father. The names you provided (Larry Cohen, David Carradine) are not associated with this role.",['Eric Lloyd'],Tiered-Forest,"The actor who plays Charlie Calvin in *The Santa Clause* movies is **Eric Lloyd** as a child, and **Tim Allen** as his father. The names you provided (Larry Cohen, David Carradine) are not associated with this role.",True
+WebQTest-1526,webqsp,test,how many languages do they speak in switzerland?,"Switzerland has **four national languages**: German, French, Italian, and Romansh.  
+
+**Answer:** 4","['Italian Language', 'German Language', 'French', 'Romansh language']",Tiered-Forest,"Switzerland has **four national languages**: German, French, Italian, and Romansh.  
+
+**Answer:** 4",True
+WebQTest-634,webqsp,test,what county is san antonio in?,"San Antonio is primarily in **Bexar County**, Texas.","['Comal County', 'Medina County', 'Bexar County']",Tiered-Forest,"San Antonio is primarily in **Bexar County**, Texas.",True
+WebQTest-698,webqsp,test,who is robin roberts father?,"Robin Roberts' father is Lawrence E. Roberts, who was a Tuskegee Airman and a colonel in the U.S. Air Force.",['Lawrence E. Roberts'],Tiered-Forest,"Robin Roberts' father is Lawrence E. Roberts, who was a Tuskegee Airman and a colonel in the U.S. Air Force.",True
+WebQTest-1708,webqsp,test,what are dallas cowboys colors?,"The Dallas Cowboys' official colors are navy blue, metallic silver, and white.","['Blue', 'Navy Blue', 'Silver', 'Royal blue', 'White']",Tiered-Forest,"The Dallas Cowboys' official colors are navy blue, metallic silver, and white.",True
+WebQTest-1990,webqsp,test,who plays timon's voice in the lion king?,The candidate answer does not contain the correct information. The voice of Timon in *The Lion King* is played by **Nathan Lane** in the original animated film.,['Nathan Lane'],Tiered-Forest,The candidate answer does not contain the correct information. The voice of Timon in *The Lion King* is played by **Nathan Lane** in the original animated film.,True

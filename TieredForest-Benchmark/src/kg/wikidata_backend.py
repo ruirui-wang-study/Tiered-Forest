@@ -230,8 +230,16 @@ class WikidataBackend(BaseKGBackend):
             direction = "out"
 
         relations: List[str]
-        if relation:
-            relations = [relation]
+        explicit_relation = relation is not None and relation.strip() != ""
+        if explicit_relation:
+            base_rel = relation.strip()
+            if direction == "in":
+                relations = [base_rel if base_rel.startswith("inverse_") else f"inverse_{base_rel}"]
+            elif direction == "both":
+                core = base_rel[len("inverse_") :] if base_rel.startswith("inverse_") else base_rel
+                relations = [core, f"inverse_{core}"]
+            else:
+                relations = [base_rel[len("inverse_") :] if base_rel.startswith("inverse_") else base_rel]
         else:
             relations = self.get_entity_relations(entity)
             if direction == "out":
@@ -242,12 +250,65 @@ class WikidataBackend(BaseKGBackend):
 
         neighbors: List[Tuple[str, str]] = []
         for rel in relations:
-            if direction == "out" and rel.startswith("inverse_"):
-                continue
-            if direction == "in" and not rel.startswith("inverse_"):
-                continue
+            if not explicit_relation:
+                if direction == "out" and rel.startswith("inverse_"):
+                    continue
+                if direction == "in" and not rel.startswith("inverse_"):
+                    continue
 
             for candidate in self.query_relation(entity, rel):
                 neighbors.append((candidate, rel))
 
         return neighbors
+
+    def query_simple(self, question: str) -> Optional[str]:
+        """
+        Lightweight symbolic QA fallback for Tier-1 on Wikidata backend.
+        """
+        q = question.strip()
+        if not q:
+            return None
+
+        templates = [
+            (re.compile(r"^who directed (.+?)[\?]?$", re.IGNORECASE), ["director", "P57"], "out"),
+            (
+                re.compile(r"^who (?:is|was) the director of (.+?)[\?]?$", re.IGNORECASE),
+                ["director", "P57"],
+                "out",
+            ),
+            (
+                re.compile(r"^what (?:films|movies) did (.+?) (?:act in|star in|appear in)[\?]?$", re.IGNORECASE),
+                ["cast member", "performer", "P161", "P175"],
+                "in",
+            ),
+            (
+                re.compile(r"^who (?:acted in|starred in|was in) (.+?)[\?]?$", re.IGNORECASE),
+                ["cast member", "performer", "P161", "P175"],
+                "out",
+            ),
+            (re.compile(r"^what (?:is the )?genre (?:of |is )?(.+?)[\?]?$", re.IGNORECASE), ["genre", "P136"], "out"),
+            (
+                re.compile(r"^when was (.+?) released[\?]?$", re.IGNORECASE),
+                ["publication date", "date of publication", "inception", "P577"],
+                "out",
+            ),
+        ]
+
+        for pattern, relations, direction in templates:
+            match = pattern.match(q)
+            if not match:
+                continue
+
+            entity_text = match.group(1).strip()
+            entity = self.find_entity(entity_text)
+            if not entity:
+                continue
+
+            for rel in relations:
+                neighbors = self.get_neighbors(entity, relation=rel, direction=direction)
+                if neighbors:
+                    answers = [n[0] for n in neighbors[:3] if n and n[0]]
+                    if answers:
+                        return ", ".join(answers)
+
+        return None

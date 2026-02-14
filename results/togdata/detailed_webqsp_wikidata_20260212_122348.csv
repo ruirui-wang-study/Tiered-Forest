@@ -1,0 +1,13 @@
+id,dataset,split,question,prediction,answers,agent,raw_prediction,correct
+WebQTest-1198,webqsp,test,who influenced samuel taylor coleridge?,"Samuel Taylor Coleridge was influenced by a wide range of thinkers and writers, most notably:
+
+*   **Philosophers:** Immanuel Kant, Plato, and the German Idealists.
+*   **Poets/Literary Figures:** William Wordsworth, John Milton, and the ballad tradition.
+*   **Theologians/Mystics:** The works of Jakob Böhme and Neoplatonism.
+*   **Contemporary Thinkers:** The chemist and Unitarian Joseph Priestley.","['Giambattista Vico', 'Baruch Spinoza', 'Thomas Browne', 'Friedrich Wilhelm Joseph Schelling', 'Emanuel Swedenborg', 'Immanuel Kant', 'John Milton', 'William Shakespeare', 'Robert Burns', 'Algernon Charles Swinburne']",ToG,"Samuel Taylor Coleridge was influenced by a wide range of thinkers and writers, most notably:
+
+*   **Philosophers:** Immanuel Kant, Plato, and the German Idealists.
+*   **Poets/Literary Figures:** William Wordsworth, John Milton, and the ballad tradition.
+*   **Theologians/Mystics:** The works of Jakob Böhme and Neoplatonism.
+*   **Contemporary Thinkers:** The chemist and Unitarian Joseph Priestley.",True
+WebQTest-1092,webqsp,test,who did viggo mortensen play in lord of the rings?,"Viggo Mortensen played Aragorn, the heir to the throne of Gondor.",['Aragorn'],ToG,"Viggo Mortensen played Aragorn, the heir to the throne of Gondor.",True

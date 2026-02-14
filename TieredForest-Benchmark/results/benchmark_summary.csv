@@ -1,4 +1,4 @@
-agent,description,accuracy,correct_count,total_questions,total_cost_usd,avg_cost_usd,total_tokens,avg_tokens,avg_latency_s,total_time_s,small_model_pct,kimi_model_pct,large_model_pct,avg_llms_called,tier1_pct,tier2_pct,tier3_pct
-Naive LLM,直接使用大模型,0.64,32,50,0.0,0.0,0,0.0,0.0,0.001199960708618164,,,,,,,
-FrugalGPT,三层级联（Small→Kimi→DeepSeek）+ CrossEncoder,0.16,8,50,0.005102000000000001,0.00010204000000000002,742,14.84,0.3249402288077534,24.199256658554077,68.0,26.0,6.0,1.38,,,
-Tiered-Forest,三层路由（符号→语义→LLM）,0.48,24,50,0.000236,4.72e-06,1180,23.6,0.16547253089904784,8.649746417999268,,,,,6.0,32.0,62.0
+agent,description,accuracy,correct_count,total_questions,total_cost_usd,avg_cost_usd,total_tokens,avg_tokens,avg_latency_s,total_time_s,avg_depth,llm_calls,avg_llm_calls,tier1_pct,tier2_pct,tier3_pct
+Naive LLM,直接使用大模型,0.64,32,50,0.0,0.0,0,0.0,0.0,0.0011839866638183594,,,,,,
+ToG,图上推理（Think-on-Graph）,0.96,48,50,0.042308000000000005,0.0008461600000000001,17128,342.56,0.0,143.4242298603058,0.94,109.0,2.18,,,
+Tiered-Forest,三层路由（符号→语义→LLM）,0.48,24,50,0.0002348,4.696e-06,1174,23.48,0.21636188465118408,11.12160062789917,,,,6.0,32.0,62.0

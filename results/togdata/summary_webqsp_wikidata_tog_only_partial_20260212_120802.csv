@@ -1,0 +1,2 @@
+﻿agent,dataset,split,backend,samples,status,accuracy,total_cost_usd,avg_latency_s,source_log
+ToG,webqsp,test,wikidata,1000,completed_agent_phase_only,0.6820,0.383834,0.00,TieredForest-Benchmark/logs/benchmark.log/togdata_webqsp_1000_20260212_094510.out.log

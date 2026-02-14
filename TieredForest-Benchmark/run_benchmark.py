@@ -20,6 +20,7 @@ from src.utils.cache_manager import LLMCache
 from src.utils.logger import setup_logger
 from src.agents.forest_agent import TieredForestAgent
 from src.agents.naive_agent import NaiveLLMAgent
+from src.agents.tog_agent import ToGAgent
 
 def evaluate_accuracy(prediction: str, ground_truths: list) -> bool:
     """评估准确性"""
@@ -68,6 +69,19 @@ def run_benchmark():
             "description": "直接使用大模型"
         },
         {
+            "name": "ToG",
+            "class": ToGAgent,
+            "params": {
+                "monitor": None,
+                "graph_engine": graph_engine,
+                "cache_manager": cache_manager,
+                "depth": 2,  # 搜索深度
+                "width": 3,  # 搜索宽度
+                "temperature": 0.0
+            },
+            "description": "图上推理（Think-on-Graph）"
+        },
+        {
             "name": "Tiered-Forest",
             "class": TieredForestAgent,
             "params": {
@@ -94,7 +108,11 @@ def run_benchmark():
         monitor = CostMonitor()
         params = agent_config['params'].copy()
         params['monitor'] = monitor
-        agent = agent_config['class'](**params)
+        try:
+            agent = agent_config['class'](**params)
+        except Exception as e:
+            print(f"Agent {agent_config['name']} 初始化失败: {e}")
+            continue
         
         # 运行测试
         correct_count = 0
@@ -122,7 +140,7 @@ def run_benchmark():
                 })
                 
             except Exception as e:
-                logger.error(f"Error on question '{question}': {e}")
+                print(f"Error on question '{question[:30]}...': {e}")
                 detailed_results.append({
                     'agent': agent_config['name'],
                     'question': question,
@@ -153,6 +171,12 @@ def run_benchmark():
             print(f"    Tier 1 (Symbolic): {tier_usage['tier1']} ({tier_usage['tier1']/len(test_dataset)*100:.1f}%)")
             print(f"    Tier 2 (Semantic): {tier_usage['tier2']} ({tier_usage['tier2']/len(test_dataset)*100:.1f}%)")
             print(f"    Tier 3 (LLM): {tier_usage['tier3']} ({tier_usage['tier3']/len(test_dataset)*100:.1f}%)")
+        elif agent_config['name'] == "ToG":
+            tog_stats = agent.get_stats()
+            print(f"\n  ToG 统计:")
+            print(f"    平均搜索深度: {tog_stats['avg_depth']:.2f}")
+            print(f"    LLM调用次数: {tog_stats['llm_calls']}")
+            print(f"    平均LLM调用/问题: {tog_stats['llm_calls']/len(test_dataset):.2f}")
         
         # 保存到总结果
         result = {
@@ -174,6 +198,10 @@ def run_benchmark():
             result['tier1_pct'] = tier_usage['tier1']/len(test_dataset)*100
             result['tier2_pct'] = tier_usage['tier2']/len(test_dataset)*100
             result['tier3_pct'] = tier_usage['tier3']/len(test_dataset)*100
+        elif agent_config['name'] == "ToG":
+            result['avg_depth'] = tog_stats['avg_depth']
+            result['llm_calls'] = tog_stats['llm_calls']
+            result['avg_llm_calls'] = tog_stats['llm_calls']/len(test_dataset)
         
         all_results.append(result)
     

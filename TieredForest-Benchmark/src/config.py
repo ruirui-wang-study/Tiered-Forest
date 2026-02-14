@@ -35,3 +35,31 @@ PRICE_LARGE_OUTPUT = 0.008
 # Experiment Settings
 TIMEOUT = 30
 MAX_RETRIES = 3
+
+# KG Backend Configuration
+KG_BACKEND = config.get('kg', 'backend', fallback=os.environ.get("KG_BACKEND", "metaqa"))
+
+# Comma-separated URLs, e.g. http://127.0.0.1:23546,http://127.0.0.1:23547
+_wikidata_server_urls_raw = config.get(
+    'kg',
+    'wikidata_server_urls',
+    fallback=os.environ.get("WIKIDATA_SERVER_URLS", "")
+)
+WIKIDATA_SERVER_URLS = [
+    url.strip() for url in _wikidata_server_urls_raw.split(",") if url.strip()
+]
+
+WIKIDATA_SERVER_URLS_FILE = config.get(
+    'kg',
+    'wikidata_server_urls_file',
+    fallback=os.environ.get(
+        "WIKIDATA_SERVER_URLS_FILE",
+        os.path.join(ROOT_DIR, "ToG", "ToG", "server_urls.txt"),
+    ),
+)
+
+FREEBASE_SPARQL_ENDPOINT = config.get(
+    'kg',
+    'freebase_sparql_endpoint',
+    fallback=os.environ.get("FREEBASE_SPARQL_ENDPOINT", "http://localhost:8890/sparql"),
+)

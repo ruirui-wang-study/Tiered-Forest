@@ -209,3 +209,77 @@ class MetaQAGraphEngine:
                     return ", ".join(actors)
         
         return None
+    
+    def get_entity_relations(self, entity: str) -> List[str]:
+        """
+        获取实体的所有关系类型（用于ToG）
+        
+        Args:
+            entity: 实体名称
+            
+        Returns:
+            关系类型列表
+        """
+        entity = self.normalize_entity(entity)
+        
+        if entity not in self.graph.nodes:
+            # 尝试查找实体
+            entity = self.find_entity(entity)
+            if not entity:
+                return []
+        
+        relations = set()
+        
+        # 出边关系
+        for neighbor in self.graph.successors(entity):
+            for key, edge_data in self.graph[entity][neighbor].items():
+                rel = edge_data.get('relation', 'unknown')
+                relations.add(rel)
+        
+        # 入边关系
+        for neighbor in self.graph.predecessors(entity):
+            for key, edge_data in self.graph[neighbor][entity].items():
+                rel = edge_data.get('relation', 'unknown')
+                relations.add(f"inverse_{rel}")  # 标记为反向关系
+        
+        return list(relations)
+    
+    def query_relation(self, entity: str, relation: str) -> List[str]:
+        """
+        查询实体通过特定关系连接的实体（用于ToG）
+        
+        Args:
+            entity: 实体名称
+            relation: 关系类型
+            
+        Returns:
+            相关实体列表
+        """
+        entity = self.normalize_entity(entity)
+        
+        if entity not in self.graph.nodes:
+            # 尝试查找实体
+            entity = self.find_entity(entity)
+            if not entity:
+                return []
+        
+        results = []
+        
+        # 处理反向关系
+        if relation.startswith("inverse_"):
+            actual_relation = relation.replace("inverse_", "")
+            # 入边查询
+            for neighbor in self.graph.predecessors(entity):
+                for key, edge_data in self.graph[neighbor][entity].items():
+                    rel = edge_data.get('relation', 'unknown')
+                    if rel == actual_relation:
+                        results.append(neighbor)
+        else:
+            # 出边查询
+            for neighbor in self.graph.successors(entity):
+                for key, edge_data in self.graph[entity][neighbor].items():
+                    rel = edge_data.get('relation', 'unknown')
+                    if rel == relation:
+                        results.append(neighbor)
+        
+        return results

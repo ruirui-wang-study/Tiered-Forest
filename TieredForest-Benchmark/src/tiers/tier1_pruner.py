@@ -1,7 +1,8 @@
 import re
 import time
-from typing import Optional, Tuple, List
-from ..graph_engine import MetaQAGraphEngine
+from typing import List, Optional, Tuple
+
+from ..kg.base_backend import BaseKGBackend
 
 class SymbolicPruner:
     """
@@ -14,7 +15,7 @@ class SymbolicPruner:
     3. 图谱直接查询（关系感知）
     """
     
-    def __init__(self, graph_engine: MetaQAGraphEngine):
+    def __init__(self, graph_engine: BaseKGBackend):
         self.graph = graph_engine
         self.rules = self._load_rules()
         self.cache = {}  # 简单的问答缓存
@@ -32,19 +33,19 @@ class SymbolicPruner:
             # 导演相关
             {
                 "pattern": re.compile(r"who directed (.+?)[\?]?$", re.IGNORECASE),
-                "relation": "directed_by",
+                "relations": ["directed_by", "director", "P57"],
                 "direction": "out",
                 "entity_group": 1
             },
             {
                 "pattern": re.compile(r"who (?:is|was) the director of (.+?)[\?]?$", re.IGNORECASE),
-                "relation": "directed_by",
+                "relations": ["directed_by", "director", "P57"],
                 "direction": "out",
                 "entity_group": 1
             },
             {
                 "pattern": re.compile(r"what (?:films|movies) did (.+?) direct[\?]?$", re.IGNORECASE),
-                "relation": "directed_by",
+                "relations": ["directed_by", "director", "P57"],
                 "direction": "in",
                 "entity_group": 1
             },
@@ -52,19 +53,19 @@ class SymbolicPruner:
             # 演员相关
             {
                 "pattern": re.compile(r"who (?:acted in|starred in|was in) (.+?)[\?]?$", re.IGNORECASE),
-                "relation": "starred_actors",
+                "relations": ["starred_actors", "cast member", "performer", "P161", "P175"],
                 "direction": "out",
                 "entity_group": 1
             },
             {
                 "pattern": re.compile(r"what (?:films|movies) did (.+?) (?:act in|star in|appear in)[\?]?$", re.IGNORECASE),
-                "relation": "starred_actors",
+                "relations": ["starred_actors", "cast member", "performer", "P161", "P175"],
                 "direction": "in",
                 "entity_group": 1
             },
             {
                 "pattern": re.compile(r"what (?:films|movies|roles) (?:did|has) (.+?) (?:acted|starred|appeared) in[\?]?$", re.IGNORECASE),
-                "relation": "starred_actors",
+                "relations": ["starred_actors", "cast member", "performer", "P161", "P175"],
                 "direction": "in",
                 "entity_group": 1
             },
@@ -72,13 +73,13 @@ class SymbolicPruner:
             # 类型相关
             {
                 "pattern": re.compile(r"what (?:is the )?genre (?:of |is )?(.+?)[\?]?$", re.IGNORECASE),
-                "relation": "has_genre",
+                "relations": ["has_genre", "genre", "P136"],
                 "direction": "out",
                 "entity_group": 1
             },
             {
                 "pattern": re.compile(r"what type of (?:film|movie) is (.+?)[\?]?$", re.IGNORECASE),
-                "relation": "has_genre",
+                "relations": ["has_genre", "genre", "P136"],
                 "direction": "out",
                 "entity_group": 1
             },
@@ -86,13 +87,13 @@ class SymbolicPruner:
             # 编剧相关
             {
                 "pattern": re.compile(r"who wrote (.+?)[\?]?$", re.IGNORECASE),
-                "relation": "written_by",
+                "relations": ["written_by", "author", "screenwriter", "P50", "P58"],
                 "direction": "out",
                 "entity_group": 1
             },
             {
                 "pattern": re.compile(r"who (?:is|was) the writer of (.+?)[\?]?$", re.IGNORECASE),
-                "relation": "written_by",
+                "relations": ["written_by", "author", "screenwriter", "P50", "P58"],
                 "direction": "out",
                 "entity_group": 1
             },
@@ -100,13 +101,13 @@ class SymbolicPruner:
             # 发行年份相关
             {
                 "pattern": re.compile(r"when was (.+?) released[\?]?$", re.IGNORECASE),
-                "relation": "release_year",
+                "relations": ["release_year", "publication date", "date of publication", "inception", "P577"],
                 "direction": "out",
                 "entity_group": 1
             },
             {
                 "pattern": re.compile(r"what year (?:was|did) (.+?) (?:come out|release)[\?]?$", re.IGNORECASE),
-                "relation": "release_year",
+                "relations": ["release_year", "publication date", "date of publication", "inception", "P577"],
                 "direction": "out",
                 "entity_group": 1
             },
@@ -114,13 +115,13 @@ class SymbolicPruner:
             # 语言相关
             {
                 "pattern": re.compile(r"what language is (.+?) in[\?]?$", re.IGNORECASE),
-                "relation": "in_language",
+                "relations": ["in_language", "original language of film or TV show", "language of work or name", "P364"],
                 "direction": "out",
                 "entity_group": 1
             },
         ]
     
-    def check(self, question: str) -> Tuple[Optional[str], float]:
+    def check(self, question: str, entity_hints: Optional[List[str]] = None) -> Tuple[Optional[str], float]:
         """
         检查是否可以通过符号层回答
         
@@ -135,10 +136,16 @@ class SymbolicPruner:
             return self.cache[question], 1.0
         
         # 策略2: 规则匹配 + 图谱查询
-        rule_answer = self._match_rules(question)
+        rule_answer = self._match_rules(question, entity_hints=entity_hints)
         if rule_answer:
             self.cache[question] = rule_answer
             return rule_answer, 0.95  # 高置信度
+
+        # 策略2.5: entity hint + 关键词关系映射（适配WebQSP非模板问句）
+        hinted_answer = self._hinted_relation_lookup(question, entity_hints=entity_hints)
+        if hinted_answer:
+            self.cache[question] = hinted_answer
+            return hinted_answer, 0.82
         
         # 策略3: 图谱简单查询（fallback）
         graph_answer = self.graph.query_simple(question)
@@ -149,7 +156,7 @@ class SymbolicPruner:
         # 无法回答
         return None, 0.0
     
-    def _match_rules(self, question: str) -> Optional[str]:
+    def _match_rules(self, question: str, entity_hints: Optional[List[str]] = None) -> Optional[str]:
         """
         基于规则模板匹配（增强版）
         
@@ -160,36 +167,130 @@ class SymbolicPruner:
         4. 查询图谱获取答案
         """
         question_clean = question.strip()
-        
+
         for rule in self.rules:
             match = rule["pattern"].match(question_clean)
-            if match:
-                # 提取实体名称
-                entity_text = match.group(rule["entity_group"]).strip()
-                
-                # 清理实体文本（去除冠词等）
-                entity_text = self._clean_entity(entity_text)
-                
-                # 在图谱中查找实体
+            if not match:
+                continue
+
+            # 候选实体：优先外部hint，再用规则抽取实体
+            candidates: List[str] = []
+            if entity_hints:
+                candidates.extend(h.strip() for h in entity_hints if h and h.strip())
+
+            raw_entity_text = match.group(rule["entity_group"]).strip()
+            cleaned_entity_text = self._clean_entity(raw_entity_text)
+            if raw_entity_text:
+                candidates.append(raw_entity_text)
+            if cleaned_entity_text and cleaned_entity_text != raw_entity_text:
+                candidates.append(cleaned_entity_text)
+
+            # 去重
+            deduped_candidates: List[str] = []
+            seen = set()
+            for text in candidates:
+                key = text.lower()
+                if key not in seen:
+                    seen.add(key)
+                    deduped_candidates.append(text)
+
+            for entity_text in deduped_candidates:
                 entity = self.graph.find_entity(entity_text)
                 if not entity:
-                    # 尝试多词组合
                     entity = self._find_entity_fuzzy(entity_text)
-                
-                if entity:
-                    # 根据规则查询图谱
+                if not entity:
+                    continue
+
+                for relation in self._rule_relations(rule):
                     neighbors = self.graph.get_neighbors(
                         entity,
-                        relation=rule["relation"],
-                        direction=rule["direction"]
+                        relation=relation,
+                        direction=rule["direction"],
                     )
-                    
                     if neighbors:
-                        # 返回前几个答案（用逗号分隔）
-                        answers = [n[0] for n in neighbors[:3]]
-                        return ", ".join(answers)
-        
+                        answers = [n[0] for n in neighbors[:3] if n and n[0]]
+                        if answers:
+                            return ", ".join(answers)
+
         return None
+
+    def _hinted_relation_lookup(
+        self, question: str, entity_hints: Optional[List[str]] = None
+    ) -> Optional[str]:
+        """
+        Controlled symbolic fallback using dataset-provided entity hints.
+        Only runs when clear relation keywords exist in question.
+        """
+        if not entity_hints:
+            return None
+
+        question_lower = question.lower()
+        relation_candidates: List[str] = []
+        direction = "out"
+
+        # Existing relation families (MetaQA + Wikidata label/PID aliases).
+        if any(k in question_lower for k in ["act in", "acted in", "starred in", "appear in"]):
+            relation_candidates.extend(["starred_actors", "cast member", "performer", "P161", "P175"])
+            if "what" in question_lower and " did " in question_lower:
+                direction = "in"
+        if "direct" in question_lower:
+            relation_candidates.extend(["directed_by", "director", "P57"])
+            if "what" in question_lower and " did " in question_lower:
+                direction = "in"
+        if any(k in question_lower for k in ["genre", "type of"]):
+            relation_candidates.extend(["has_genre", "genre", "P136"])
+        if any(k in question_lower for k in ["wrote", "writer", "written by", "author"]):
+            relation_candidates.extend(["written_by", "author", "screenwriter", "P50", "P58"])
+            if "what" in question_lower and " did " in question_lower:
+                direction = "in"
+        if any(k in question_lower for k in ["released", "release year", "what year"]):
+            relation_candidates.extend(["release_year", "publication date", "date of publication", "inception", "P577"])
+        if any(k in question_lower for k in ["language", "speak", "write in"]):
+            relation_candidates.extend(
+                [
+                    "in_language",
+                    "original language of film or TV show",
+                    "language of work or name",
+                    "P364",
+                ]
+            )
+
+        # No confident relation signal -> don't force Tier1.
+        if not relation_candidates:
+            return None
+
+        dedup_relations: List[str] = []
+        seen_rel = set()
+        for rel in relation_candidates:
+            key = rel.lower()
+            if key not in seen_rel:
+                seen_rel.add(key)
+                dedup_relations.append(rel)
+
+        for hint in entity_hints:
+            entity = self.graph.find_entity(hint)
+            if not entity:
+                continue
+            for relation in dedup_relations:
+                neighbors = self.graph.get_neighbors(entity, relation=relation, direction=direction)
+                if not neighbors:
+                    continue
+                answers = [n[0] for n in neighbors[:3] if n and n[0]]
+                if answers:
+                    return ", ".join(answers)
+
+        return None
+
+    def _rule_relations(self, rule: dict) -> List[str]:
+        relations = rule.get("relations")
+        if isinstance(relations, list):
+            return [str(r).strip() for r in relations if str(r).strip()]
+
+        legacy = rule.get("relation")
+        if isinstance(legacy, str) and legacy.strip():
+            return [legacy.strip()]
+
+        return []
     
     def _clean_entity(self, text: str) -> str:
         """清理实体文本"""
